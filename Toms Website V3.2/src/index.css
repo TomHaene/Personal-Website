@@ -1,6 +1,6 @@
 
 *{
-  /* outline: solid hotpink; */
+  outline: solid hotpink;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -48,7 +48,7 @@ label.logo{
   color: white;
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
+  padding: 0 20%;
   font-weight: bold;
 }
 
@@ -365,14 +365,14 @@ nav a:hover{
 .blog-item img{
   height: auto;
   max-width: 300px;
-  min-width: 170px;
+  min-width: 130px;
   width: 20vw;
-
   border-radius: 20px;
 }
 
 .blog-item-text{
-  padding: 7% 8% 8% 8%;
+  margin-left: 3%;
+  
 }
 
 .blog-item-text h3{
@@ -522,7 +522,7 @@ nav a:hover{
     width: 70vw;
   }
   .blog-item-text{
-    padding: 9% 8% 8% 8%;
+   
   }
   
   .blog-item-text h3{
@@ -589,6 +589,18 @@ nav a:hover{
     border-radius: 20px;
   }
  
+  .contact-container{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  .contact-item{
+    margin: 5px 0;
+  }
 
 
 
@@ -629,15 +641,16 @@ nav a:hover{
     width: 80vw;
   }
   .blog-item-text{
-    padding: 11% 8% 8% 8%;
+  
   }
   
   .blog-item-text h3{
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .blog-item-text p{
     font-size: 12px;
   }
+  
 
 }
