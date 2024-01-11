@@ -158,7 +158,7 @@ function Skills(){
       <br></br>
 
       <div className='accordian-container'>
-          <Accordion defaultActiveKey="0" className='left-accordian'>
+          <Accordion className='left-accordian'>
           <Accordion.Item eventKey="0">
             <Accordion.Header>Hardware skills</Accordion.Header>
             <Accordion.Body>
@@ -208,7 +208,7 @@ function Skills(){
           </Accordion.Item>
         </Accordion>
 
-        <Accordion defaultActiveKey="0" className='right-accordian'>
+        <Accordion className='right-accordian'>
       <Accordion.Item eventKey="0">
         <Accordion.Header>Programming languages</Accordion.Header>
         <Accordion.Body>
