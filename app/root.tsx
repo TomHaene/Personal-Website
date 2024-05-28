@@ -1,9 +1,14 @@
 import {Links,Meta,Outlet,Scripts,ScrollRestoration,} from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import styles from "./tailwind.css?url";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous" },
+  { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap" }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -15,8 +20,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-std-brown">
+        <NavBar />
         {children}
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>
