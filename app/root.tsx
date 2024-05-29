@@ -3,6 +3,8 @@ import type { LinksFunction } from "@remix-run/node";
 import styles from "./tailwind.css?url";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import NavDrawer from "./components/NavDrawer";
+import { useState } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -12,6 +14,15 @@ export const links: LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+
+
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+      setDrawerOpen(!isDrawerOpen);
+  };
+
+  
   return (
     <html lang="en">
       <head>
@@ -21,7 +32,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="bg-std-brown">
-        <NavBar />
+        <NavBar toggleDrawer={toggleDrawer}/>
+        <NavDrawer toggleDrawer={toggleDrawer} isOpen={isDrawerOpen} />
         {children}
         <Footer />
         <ScrollRestoration />
