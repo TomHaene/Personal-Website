@@ -5,18 +5,26 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
+    "netlify:build": "remix build && remix-serve build",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/serve": "^2.9.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.11",
     "isbot": "^4.1.0",
+    "lucide-react": "^0.379.0",
+    "netlify-lambda": "^2.0.16",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-awesome-reveal": "^4.2.12",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.9.2",
