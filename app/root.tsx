@@ -31,7 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-std-brown">
+      <body className="bg-std-brown min-h-screen flex flex-col scroll-smooth">
         <NavBar toggleDrawer={toggleDrawer}/>
         <NavDrawer toggleDrawer={toggleDrawer} isOpen={isDrawerOpen} />
         {children}

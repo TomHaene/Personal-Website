@@ -6,7 +6,7 @@ export default function Footer() {
 
     <>
     {/* 1. Mobile Footer */}
-    <div className="flex lg:hidden bg-dark-brown justify-center items-center gap-10 text-white font-museo-moderno absolute bottom-0 w-full h-[81px]">
+    <div className="mt-auto flex lg:hidden bg-dark-brown justify-center items-center gap-10 text-white font-museo-moderno w-full h-[81px]">
         <div className="text-[17px]"> ThomasHaene.com</div>
 
         <div className="flex gap-6"> 
@@ -15,20 +15,15 @@ export default function Footer() {
         </div>
     </div>
 
-    <div className="hidden lg:flex bg-dark-brown justify-center items-center gap-10 text-white font-museo-moderno absolute bottom-0 w-full h-[81px]">
+    <div className="mt-auto hidden lg:flex bg-dark-brown justify-center items-center gap-10 text-white font-museo-moderno  w-full h-[81px]">
         <div className="text-[17px]"> Thomas Haene&apos;s Portfolio Site. This site was built using React</div>
 
         <div className="flex gap-6"> 
-            <Github />
-            <Linkedin />
+            <Github className="cursor-pointer"/>
+            <Linkedin className="cursor-pointer" />
         </div>
     </div>
-
-
-    
-    
     </>
-
     
   )
 }
