@@ -22,10 +22,13 @@ function Home() {
         </p>
 
         {/* Desktop Buttons */}
+
         <div className="hidden xl:flex justify-start gap-10 xl:gap-16 mt-14">
-          <button className="bg-custom-orange text-xs xl:text-sm text-white font-black rounded-3xl p-2 xl:p-4 flex items-center justify-center w-32 xl:w-44 hover:bg-darker-orange hover:text-cream">
-            View Resume <FileText />
-          </button>
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="bg-custom-orange text-xs xl:text-sm text-white font-black rounded-3xl p-2 xl:p-4 flex items-center justify-center w-32 xl:w-44 hover:bg-darker-orange hover:text-cream">
+              View Resume <FileText />
+            </button>
+          </a>
 
           <a href="mailto:tom@haene.org">
             <button className="bg-cream text-xs xl:text-sm text-black font-black rounded-3xl p-2 xl:p-4 flex items-center justify-center w-32 xl:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl">

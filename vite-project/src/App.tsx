@@ -4,7 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 import Router from "./router";
 import Footer from "./components/Footer";
 import NavDrawer from "./components/NavDrawer";
-
 function App() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 

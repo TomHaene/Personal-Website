@@ -17,13 +17,13 @@ function AboutMe() {
         </section>
 
         <section className="xl:w-2/3 text-white mt-10 xl:mt-0 xl:pr-20 text-center">
-          <h1 className="font-bold  text-4xl">ABOUT ME</h1>
-          <p className="mt-3 text-sm lg:text-base">
+          <h1 className="font-bold text-4xl underline-offset-8 underline decoration-custom-orange decoration-2">ABOUT ME</h1>
+          <p className="mt-3 text-sm lg:text-base text-custom-gray">
             I'm Thomas Haene - a student currently in his 4th year of Electrical
             Engineering at McGill University.
           </p>
 
-          <h2 className="font-semibold text-2xl mt-7">My Story</h2>
+          <h2 className="font-semibold text-2xl mt-5">My Story</h2>
           <p className="text-sm lg:text-base mt-2">
             I've lived in three countries: born in Cambridge, UK, then moved to
             New Brunswick, Canada, for elementary and middle school, then to Abu
@@ -31,11 +31,11 @@ function AboutMe() {
             <a
               href="https://www.nordangliaeducation.com/bis-abu-dhabi/news/2021/08/05/meet-thomas-haene-class-of-2021-ib-diploma-graduate"
               target="_blank"
-              className="text-blue-200 underline"
+              className="nderline text-custom-orange hover:text-darker-orange"
             >
-              British International School Abu Dhabi
+              British International School Abu Dhabi 
             </a>
-            and earned my IGCSE certificate and an IB Diploma with a score of
+            {""} and earned my IGCSE certificate and an IB Diploma with a score of
             41/45, (placing in the top 1% of international students). Now, I'm
             pursuing a Bachelor's in Electrical Engineering at McGill
             University, ranked 29th globally by QS World University Rankings
@@ -73,8 +73,8 @@ function AboutMe() {
       {/* Skills Section Below */}
       <hr className="mt-10 mx-10" />
       <section className="text-white px-0 mt-10 flex flex-col items-center">
-        <h1 className="font-bold text-4xl">My Skills</h1>
-        <p className="mt-3 px-5 text-center">
+        <h1 className="font-bold text-4xl underline-offset-8 underline decoration-custom-orange decoration-2">My Skills</h1>
+        <p className="mt-3 px-5 text-center text-custom-gray">
           I'm Thomas Haene - a student currently in his 4th year of Electrical
           Engineering at McGill University.
         </p>
@@ -83,7 +83,7 @@ function AboutMe() {
         <div className="flex flex-wrap justify-start w-full md:w-4/5 mt-10">
           <section className="w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center mb-6">
             <CircuitBoard size={48} />
-            <h2 className="font-bold text-2xl mt-2">Electrical Engineering</h2>
+            <h2 className="font-bold text-2xl mt-2 underline-offset-8 underline decoration-custom-orange decoration-1">Electrical Engineering</h2>
             <ul className="mt-3 text-center space-y-2">
               <li>MATLAB</li>
               <li>Simulink</li>
@@ -95,7 +95,7 @@ function AboutMe() {
 
           <section className="w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center mb-6">
             <Laptop size={48} />
-            <h2 className="font-bold text-2xl mt-2">Software Engineering</h2>
+            <h2 className="font-bold text-2xl mt-2 underline-offset-8 underline decoration-custom-orange decoration-1">Software Engineering</h2>
             <ul className="mt-3 text-center space-y-2">
               <li>React frontend framework</li>
               <li>JavaScript</li>
@@ -107,7 +107,7 @@ function AboutMe() {
 
           <section className="w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center mb-6">
             <UserRound size={48} />
-            <h2 className="font-bold text-2xl mt-2">Soft Skills</h2>
+            <h2 className="font-bold text-2xl mt-2 underline-offset-8 underline decoration-custom-orange decoration-1">Soft Skills</h2>
             <ul className="mt-3 text-center space-y-2">
               <li>Public Speaking</li>
               <li>Leadership</li>

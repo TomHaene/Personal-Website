@@ -1,4 +1,7 @@
-import ProjectCard from "../components/ProjectCard";
+import { CodeXml, Eye } from "lucide-react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Carousel } from "react-bootstrap";
+import { useState } from "react";
 
 type Container = {
   company: string;
@@ -45,7 +48,7 @@ const education: Container[] = [
     startDate: "September 2018",
     endDate: "May 2021",
     description: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque nobis. Magni voluptatem praesentium maxime quisquam? Pariatur eum fugit expedita excepturi error soluta sed laudantium rem culpa consectetur. Numquam, quia.",
+      "Achieved a total score of 41/45 in the IB Diploma, placing me in the top 3% to 5% of students globally. Earned a 7 in Higher Level (HL) Physics and was awarded the Physics Achievement Award, recognizing me as the top-performing Physics student in my year group.",
     ],
     imgName: "populusLogo.png",
   },
@@ -54,9 +57,7 @@ const education: Container[] = [
     myJobTitle: "Bachelors Degree in Electrical Engineering",
     startDate: "May 2024",
     endDate: "August 2024",
-    description: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, cumque nobis. Magni voluptatem praesentium maxime quisquam? Pariatur eum fugit expedita excepturi error soluta sed laudantium rem culpa consectetur. Numquam, quia.",
-    ],
+    description: [""],
     imgName: "populusLogo.png",
   },
 ];
@@ -91,7 +92,7 @@ const studySync = {
   title: "Study Sync - Chrome Extension",
   content:
     "This Chrome extension revolutionizes study sessions. With a click, users can record sessions effortlessly using a built-in stopwatch. Data is seamlessly sent to a secure database, personalized to each user. They can track progress effortlessly, receiving insightful analysis and visual representations of their study habits over time. Install now for streamlined studying and meaningful insights into your performance.",
-  imgName: "study-sync.jpg",
+  imageUrls: ["study-sync.jpg"],
   slug: "study-sync-chrome-extension",
   date: "March 2024",
 };
@@ -100,9 +101,18 @@ const nbaProject = {
   title: "NBA Data Science Project",
   content:
     "A full-stack web application using Django for the backend and vanilla HTML, CSS, and JS for the frontend. This was my first time creating a web app with a backend, teaching me the basics of HTTP requests and routing. The project provides a simple UI to enter any NBA player, past or present, scrapes data from nba.com/stats, and returns a comparison of their regular-season and playoffs performance.",
-  imgName: "nba.png",
+  imageUrls: ["nba.png"],
   slug: "nba-data-science-project",
   date: "July-August 2023",
+};
+
+const factoryWebsite = {
+  title: "The Factory McGill's Official Website",
+  content:
+    "The Factory is the club that I am in charge of at McGill. This project was a collaboration between me and 2 other Factory managers, where we worked together to create the website for our club. We used an innovative appraoch where we prioritized future-proofness of the site by populating the data on it dynamically using a CMS (Content Management System). This will allow us to update lab info without having to deploy the frontend each time. ",
+  slug: "nba-data-science-project",
+  imageUrls: ["factory-home-page.png", "managersPageWide.png", "managersPagePopup.png", "ourLab.png", "solderingStation.png"],
+  date: "August-October 2024",
 };
 
 // const stoveProject = {
@@ -122,13 +132,13 @@ function Experience() {
     >
       <div className="flex flex-col 2xl:flex-row pt-10 2xl:px-16">
         <section className="flex-1">
-          <h2 className="text-white text-3xl font-bold mb-5 text-center lg:text-start lg:ml-32">
+          <h2 className="text-white text-3xl font-bold mb-5 text-center lg:text-start lg:ml-32 underline-offset-8 underline decoration-custom-orange decoration-2">
             Education
           </h2>
 
           <Timeline containers={education} />
 
-          <h2 className="text-white text-3xl font-bold mb-5 text-center mt-7 lg:mt-0 lg:text-start lg:ml-32">
+          <h2 className="text-white text-3xl font-bold mb-5 text-center mt-7 lg:mt-0 lg:text-start lg:ml-32 underline-offset-8 underline decoration-custom-orange decoration-2">
             Extracurriculars
           </h2>
 
@@ -136,7 +146,7 @@ function Experience() {
         </section>
 
         <section className="flex-1">
-          <h2 className="text-white text-3xl font-bold mb-5 text-center mt-7 lg:mt-0 lg:text-start lg:ml-32">
+          <h2 className="text-white text-3xl font-bold mb-5 text-center mt-7 lg:mt-0 lg:text-start lg:ml-32 underline-offset-8 underline decoration-custom-orange decoration-2">
             Work Experience
           </h2>
 
@@ -146,27 +156,35 @@ function Experience() {
 
       <hr className="mt-10 mx-10" />
       <section className="text-white lg:px-20 mt-10 flex flex-col items-center">
-        <h1 className="font-bold text-4xl">Personal Projects</h1>
-        <p className="text-center px-5">
+        <h1 className="font-bold text-4xl underline-offset-8 underline decoration-custom-orange decoration-2">
+          Personal Projects
+        </h1>
+        <p className="text-center px-5 mt-3 text-custom-gray">
           Below are a few examples of some recent personal projects of mine.
         </p>
 
         {/* Flex wrap to allow cards to adjust to screen size */}
         <div className="mt-10 flex flex-wrap gap-x-8 gap-y-10 mb-10 justify-center px-8 sm:px-0 min-h-[600px]">
-          <ProjectCard
-            styles="w-full sm:w-[400px] lg:w-[450px] xl:w-[500px] bg-cream text-black font-museo-moderno shadow-2xl overflow-hidden pb-5"
+          <ProjectSection
             title={studySync.title}
-            imgName={studySync.imgName}
-            cardContent={studySync.content}
+            imageUrls={studySync.imageUrls}
+            description={studySync.content}
             link="https://chromewebstore.google.com/detail/study-sync/dlgnlhemoahmocicklcanfcoigdkblfa?hl=en-US&utm_source=ext_sidebar"
             date={studySync.date}
           />
 
-          <ProjectCard
-            styles="w-full sm:w-[400px] lg:w-[450px] xl:w-[500px] bg-cream text-black font-museo-moderno shadow-2xl overflow-hidden pb-5"
+          <ProjectSection
+            title={factoryWebsite.title}
+            imageUrls={factoryWebsite.imageUrls}
+            description={factoryWebsite.content}
+            link="https://factory.mcgilleus.ca/"
+            date={factoryWebsite.date}
+          />
+
+          <ProjectSection
             title={nbaProject.title}
-            imgName={nbaProject.imgName}
-            cardContent={nbaProject.content}
+            imageUrls={nbaProject.imageUrls}
+            description={nbaProject.content}
             link="https://tomhaene.pythonanywhere.com/"
             date={nbaProject.date}
           />
@@ -211,7 +229,7 @@ type timelineProps = {
 function Timeline(props: timelineProps) {
   return (
     <div className="border-l-2 ml-4 lg:ml-20 relative w-11/12 ">
-      <div className="lg:pl-10 pl-5" >
+      <div className="lg:pl-10 pl-5">
         {props.containers.map((item: Container) => (
           <Container
             startDate={item.startDate}
@@ -223,6 +241,107 @@ function Timeline(props: timelineProps) {
         ))}
       </div>
     </div>
+  );
+}
+
+type ProjectSectionProps = {
+  title: string;
+  description: string;
+  imageUrls: string[];
+  link: string;
+  date: string;
+};
+
+function ProjectSection(props: ProjectSectionProps) {
+  return (
+    <div>
+      <div className="flex">
+        <div className="flex flex-1 flex-col justify-around pt-10 pl-20  ">
+          <div>
+            <h2 className="text-3xl font-bold">{props.title}</h2>
+            <small>{props.date}</small>
+          </div>
+
+          <p className="leading-loose pr-5">{props.description}</p>
+
+          <div className="flex gap-5">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <button className="bg-custom-orange text-sm text-white font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-darker-orange hover:text-cream gap-2">
+                <CodeXml />
+                <p>View Code</p>
+              </button>
+            </a>
+
+            <a href="mailto:tom@haene.org">
+              <button className="bg-cream text-sm text-black font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl gap-2">
+                <Eye />
+                <p>Live Demo</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div className="flex-1  h-[450px]">
+          <ControlledCarousel imageUrls={props.imageUrls} />
+        </div>
+      </div>
+      <hr className="text-white mx-10 mt-10" />
+    </div>
+  );
+}
+
+type CarouselProps = {
+  imageUrls: string[];
+};
+
+function ControlledCarousel(props: CarouselProps) {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex: number) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      {props.imageUrls.map((image) => (
+        <Carousel.Item>
+          <img
+            src={`/${image}`}
+            alt=""
+            className="h-[450px] mx-auto object-cover opacity-70"
+          />
+
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
+
+      {/* <Carousel.Item>
+        <img
+          src="/study-sync.jpg"
+          alt=""
+          className="h-[450px] mx-auto object-cover opacity-60"
+        />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          src="/factory-home-page.png"
+          alt=""
+          className="h-[450px] mx-auto object-cover opacity-60"
+        />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item> */}
+    </Carousel>
   );
 }
 
