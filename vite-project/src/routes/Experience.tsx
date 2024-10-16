@@ -111,7 +111,13 @@ const factoryWebsite = {
   content:
     "The Factory is the club that I am in charge of at McGill. This project was a collaboration between me and 2 other Factory managers, where we worked together to create the website for our club. We used an innovative appraoch where we prioritized future-proofness of the site by populating the data on it dynamically using a CMS (Content Management System). This will allow us to update lab info without having to deploy the frontend each time. ",
   slug: "nba-data-science-project",
-  imageUrls: ["factory-home-page.png", "managersPageWide.png", "managersPagePopup.png", "ourLab.png", "solderingStation.png"],
+  imageUrls: [
+    "factory-home-page.png",
+    "managersPageWide.png",
+    "managersPagePopup.png",
+    "ourLab.png",
+    "solderingStation.png",
+  ],
   date: "August-October 2024",
 };
 
@@ -130,7 +136,7 @@ function Experience() {
       className="bg-std-brown font-nunito pb-10"
       style={{ minHeight: "calc(100vh - (76px + 96px))" }} //Minus the height of the NavBar & the Footer
     >
-      <div className="flex flex-col 2xl:flex-row pt-10 2xl:px-16">
+      <div className="flex flex-col 2xl:flex-row pt-10 2xl:px-1 items-center 2xl:items-start">
         <section className="flex-1">
           <h2 className="text-white text-3xl font-bold mb-5 text-center lg:text-start lg:ml-32 underline-offset-8 underline decoration-custom-orange decoration-2">
             Education
@@ -156,7 +162,7 @@ function Experience() {
 
       <hr className="mt-10 mx-10" />
       <section className="text-white lg:px-20 mt-10 flex flex-col items-center">
-        <h1 className="font-bold text-4xl underline-offset-8 underline decoration-custom-orange decoration-2">
+        <h1 className="font-bold text-3xl lg:text-4xl underline-offset-8 underline decoration-custom-orange decoration-2">
           Personal Projects
         </h1>
         <p className="text-center px-5 mt-3 text-custom-gray">
@@ -164,7 +170,7 @@ function Experience() {
         </p>
 
         {/* Flex wrap to allow cards to adjust to screen size */}
-        <div className="mt-10 flex flex-wrap gap-x-8 gap-y-10 mb-10 justify-center px-8 sm:px-0 min-h-[600px]">
+        <div className="lg:mt-10 flex flex-wrap gap-x-8 gap-y-10 mb-10 justify-center px-8 sm:px-0 min-h-[600px]">
           <ProjectSection
             title={studySync.title}
             imageUrls={studySync.imageUrls}
@@ -255,7 +261,8 @@ type ProjectSectionProps = {
 function ProjectSection(props: ProjectSectionProps) {
   return (
     <div>
-      <div className="flex">
+      {/* Desktop Version */}
+      <div className="xl:flex xl:flex-row hidden ">
         <div className="flex flex-1 flex-col justify-around pt-10 pl-20  ">
           <div>
             <h2 className="text-3xl font-bold">{props.title}</h2>
@@ -284,7 +291,38 @@ function ProjectSection(props: ProjectSectionProps) {
           <ControlledCarousel imageUrls={props.imageUrls} />
         </div>
       </div>
-      <hr className="text-white mx-10 mt-10" />
+
+      {/* Mobile Version */}
+      <div className="flex xl:hidden flex-col">
+        <div className="flex flex-col gap-4 justify-around pt-10 items-center">
+          <div>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center">{props.title}</h2>
+            <p className="text-center">{props.date}</p>
+          </div>
+          <div className="h-[300px] md:h-[400px] w-full sm:w-11/12 md:w-10/12 mx-auto">
+            <ControlledCarousel imageUrls={props.imageUrls} />
+          </div>
+          <p className="leading-loose px-5 md:px-32">{props.description}</p>
+
+          <div className="flex justify-center gap-5">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <button className="bg-custom-orange text-sm text-white font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-darker-orange hover:text-cream lg:gap-2 gap-1 w-36 p-3">
+                <CodeXml />
+                <p>View Code</p>
+              </button>
+            </a>
+
+            <a href="mailto:tom@haene.org">
+              <button className="bg-cream text-sm text-black font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl lg:gap-2 gap-1 w-36 p-3">
+                <Eye />
+                <p>Live Demo</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr className="text-white mt-10 w-full" />
     </div>
   );
 }
@@ -307,40 +345,14 @@ function ControlledCarousel(props: CarouselProps) {
           <img
             src={`/${image}`}
             alt=""
-            className="h-[450px] mx-auto object-cover opacity-70"
+            className="w-full sm:w-11/12 md:w-10/12  h-[300px] md:h-[400px] mx-auto object-cover opacity-70"
           />
 
           <Carousel.Caption>
             <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}
-
-      {/* <Carousel.Item>
-        <img
-          src="/study-sync.jpg"
-          alt=""
-          className="h-[450px] mx-auto object-cover opacity-60"
-        />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          src="/factory-home-page.png"
-          alt=""
-          className="h-[450px] mx-auto object-cover opacity-60"
-        />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item> */}
     </Carousel>
   );
 }

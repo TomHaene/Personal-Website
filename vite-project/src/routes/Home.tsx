@@ -38,14 +38,19 @@ function Home() {
         </div>
 
         {/* Mobile Buttons */}
-        <div className="flex xl:hidden justify-start gap-10 mt-14">
-          <button className="bg-custom-orange text-xs text-white font-black rounded-3xl p-3 gap-1 flex items-center justify-center w-32 hover:bg-darker-orange hover:text-cream">
-            View Resume <FileText size={16} />
-          </button>
+
+        <div className="flex xl:hidden justify-center gap-5 mt-10">
+          <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="bg-custom-orange text-sm text-white font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-darker-orange hover:text-cream lg:gap-2 gap-1 w-36 p-3">
+              <FileText size={16} />
+              <p>View Resume</p>
+            </button>
+          </a>
 
           <a href="mailto:tom@haene.org">
-            <button className="bg-cream text-xs xl:text-sm text-black font-black rounded-3xl p-3 gap-1 flex items-center justify-center w-32 hover:bg-custom-gray hover:text-gray-900 shadow-2xl">
-              Email me <Mail size={16} />
+            <button className="bg-cream text-sm text-black font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl lg:gap-2 gap-1 w-36 p-3">
+              <Mail size={16} />
+              <p>Email me</p>
             </button>
           </a>
         </div>
