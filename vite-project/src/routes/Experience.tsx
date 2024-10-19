@@ -19,23 +19,24 @@ const workExperience: Container[] = [
     startDate: "May 2024",
     endDate: "August 2024",
     description: [
-      "Earned the Global Challenges Award (GCA) from McGill University to fund my work on this project. ",
-      "The Populus Solidarity Cooperative is a company devoted to helping non-profits and cooperatives, on this project I joined a team of experienced developers to help Populus build their digital dashboard. This dashboard is provided to the clients of Populus as a SAAS product, and it helps them stay on top of important governemntal complience tasks and also provide resources to help them raise funding.",
-      "The tech-stack we used for the frontend was React, Remix.run, tailwindCSS and React Aria as a component library. We also used Payload CMS as our backend. ",
+      "The Populus Solidarity Cooperative is dedicated to empowering non-profits and cooperatives. During this project, I collaborated with a skilled team of software engineeris to build a digital dashboard for Populus' clients. This dashboard, offered as a SaaS product, enables non-profits and cooperatives to efficiently manage critical governmental compliance tasks while also providing valuable resources for securing funding",
+      "The tech-stack we used for the frontend was React, Remix.run, TailwindCSS and React Aria as a component library. We also used Payload CMS as our backend.",
+      "I received the Global Challenges Award (GCA) from McGill University, which funded my work on this impactful project. ",
+      "While my main ambition isn't to become a Web-Developer, I learned many valuable lessons from this experience, most notably I learned first-hand how experienced engineers work together to efficiently build, test and deploy real world software, and observed the software development cycle in action.",
     ],
     imgName: "populusLogo.png",
   },
   {
-    company: "The Photonics Systems Group McGill",
+    company: "Prof. David V Plants Photonics Research Group McGill",
     myJobTitle: "Part-Time Undergraduate Researcher",
     startDate: "May 2024",
     endDate: "Present",
     description: [
-      "Worked with Professor David V Plant’s Photonics Systems Group for the summer, part-time.",
-      "More specifically, I worked on an innovative project with the aim to achieve digital communication via free-space optical transmission with a sufficiently high signal-to-noise ratio (SNR) and minimal bit error rate (BER) to make it feasible for rotary interface communication.",
-      "My role in the project was to assist with obtaining the necessary experiemental meaurements and a large portion of my work involved automating the measurement setup process using MATLAB by remotely connecting to our measurement instruments via the VISA protocol ",
-      "From this time I gained valuable experience in how research groups stay organized, as I would attend the weekly group meetings as well as our weekly meeting with our client company to provide progress updates.",
-      "Whenever I had free time outside of lab work and measurements, I proactively engaged with PhD students to deepen my understanding of digital communications. I compiled these valuable insights into numerous blog articles, which can be found in the 'Blog' section of this site.",
+      "Photonics is the field of engineering that deals with using EM Radiation near the visible range for various applications. Common examples of application are in Fiber Optic cables, Optical Computing",
+      "I began as a summer research intern in May 2025, but I’ve decided to continue working with the group part-time during my studies. This decision reflects both my passion for what I’ve learned and the meaningful impact I’ve been able to make.",
+      "I've worked on a few projects, making contributions wherever needed, however the focus of the projects has always been on Fiber Optics/Light communication, employing concepts from telecommunications and physics.",
+      "This summer, I contributed to a free-space optical communication system, which aspires to revolutionize MRI implementation. My role involved automating the measurement gathering process using MATLAB. By connecting to all lab instruments through the SCPI Instrument command language, I successfully enhanced the efficiency and integrity of the data collection process.",
+      "Since then, I’ve also developed a MATLAB Simulink model for multivariable numerical gradient descent, centered around optimizing a polarization controller. The model reads the current and adjusts two voltage parameters to achieve the lowest possible current.",
     ],
     imgName: "fiberOptics.jpg",
   },
@@ -48,16 +49,19 @@ const education: Container[] = [
     startDate: "September 2018",
     endDate: "May 2021",
     description: [
-      "Achieved a total score of 41/45 in the IB Diploma, placing me in the top 3% to 5% of students globally. Earned a 7 in Higher Level (HL) Physics and was awarded the Physics Achievement Award, recognizing me as the top-performing Physics student in my year group.",
+      "Achieved a total score of 41/45 in the IB Diploma, placing me in the top 3% to 5% of students globally.",
+      "Earned a 7 in Higher Level (HL) Physics and was awarded the Physics Achievement Award, recognizing me as the top-performing Physics student in my year group.",
     ],
     imgName: "populusLogo.png",
   },
   {
     company: "McGill University, Montreal, Canada",
     myJobTitle: "Bachelors Degree in Electrical Engineering",
-    startDate: "May 2024",
-    endDate: "August 2024",
-    description: [""],
+    startDate: "September",
+    endDate: "December 2025",
+    description: [
+      "'McGill University is one of the top public universities in Montreal, Canada. It is ranked #29 in QS World University Rankings 2025.'",
+    ],
     imgName: "populusLogo.png",
   },
 ];
@@ -70,8 +74,8 @@ const clubs: Container[] = [
     endDate: "May 2024",
     description: [
       "The Factory is a student-run hardware lab at McGill, first and foremost we exist to offer students a space to work on any personal projects they may have. Some of the notable in-lab resources we provide include: soldering stations, oscilloscopes, 3D printers, microcontroller boards and cabinets filled with electronic components",
-      "My main responsibiliy as a general manager was that I had to weekly office hours where I had to be in the lab to ensure the equipment we have was being used safely and properly, and also be there to answer any questions the lab visitors might have.",
-      "I also went above and beyond my main responsibility, by proposing and managing a 'Personal Project Bootcamp' for students. The purpose of this bootcamp was to provide some positive pressure for students whoe registered to complete their projects, as we would check in on their progress and have a demonstration deadline at the end of the semester. I made sure we always had enough managers there for the bootcamp slots and that the managers were well-equiped to assist in the technical aspects of the studnets personal projects. ",
+      "My primary responsibility as a general manager was to host weekly office hours in the lab, where I ensured the proper and safe use of equipment and was available to answer any questions from lab users.",
+      "I went beyond my main responsibilities by proposing and managing a 'Personal Project Bootcamp' for students. The goal of the bootcamp was to create a supportive environment with positive accountability, where students could focus on completing personal projects. We scheduled regular progress check-ins and set a final demonstration deadline for the end of the semester. I ensured that we had enough managers available for each bootcamp session and made sure they were well-prepared to assist students with the technical aspects of their projects.",
     ],
     imgName: "factoryLogo.png",
   },
@@ -81,8 +85,9 @@ const clubs: Container[] = [
     startDate: "May 2024",
     endDate: "May 2025",
     description: [
-      "I was then promoted to Head Manager the following year, which is like the 'president or 'leader' of the Factory, in the sense that I was in charge of managing the lab and also all the other lab managers.",
-      "I have ambitious plans for the Factory in my year as Head Manager, in particular I would like to re-vamp our website, and integrate it with a CMS (Content Management System) like Strapi, which would allow us to post lab-updates and weekly lab availability in a simple way without having to redeploy the site with each update. I also have plans to integrate our 'airtable' with the website through an API, which could provide students with a list of the equipment currently available in the Factory.",
+      "The following year, I was promoted to Head Manager, a role equivalent to being the 'president' of the lab. I was solely responsible for managing all lab operations and overseeing the team of lab managers.",
+      "I collaborated with another manager to modernize the Factory website. This project, which can be viewed in the 'Personal Projects' section below, not only highlights my skills but also serves as an excellent showcase of what the Factory has to offer.",
+      "My role essentially involves coordinating and leading meetings for a team of 25 managers, managing finances to ensure we maintain essential supplies like solder and 3D printing filament, and applying for funding and new equipment.",
     ],
     imgName: "factoryLogo.png",
   },
@@ -92,18 +97,34 @@ const studySync = {
   title: "Study Sync - Chrome Extension",
   content:
     "This Chrome extension revolutionizes study sessions. With a click, users can record sessions effortlessly using a built-in stopwatch. Data is seamlessly sent to a secure database, personalized to each user. They can track progress effortlessly, receiving insightful analysis and visual representations of their study habits over time. Install now for streamlined studying and meaningful insights into your performance.",
-  imageUrls: ["study-sync.jpg"],
+  imageUrls: [
+    "study-sync.jpg",
+    "studysync2.jpg",
+    "studysync3.jpg",
+    "studysync4.jpg",
+    "studysync5.jpg",
+  ],
   slug: "study-sync-chrome-extension",
   date: "March 2024",
+  codeLink: "",
+  demoLink:
+    "https://chromewebstore.google.com/detail/study-sync/dlgnlhemoahmocicklcanfcoigdkblfa",
 };
 
 const nbaProject = {
   title: "NBA Data Science Project",
   content:
-    "A full-stack web application using Django for the backend and vanilla HTML, CSS, and JS for the frontend. This was my first time creating a web app with a backend, teaching me the basics of HTTP requests and routing. The project provides a simple UI to enter any NBA player, past or present, scrapes data from nba.com/stats, and returns a comparison of their regular-season and playoffs performance.",
-  imageUrls: ["nba.png"],
+    "This project was completed in my early days of learning web-developemnt. It's a basic full-stack web application using Django for the backend and vanilla HTML, CSS, and JS for the frontend. This was my first time creating a web app with a backend, teaching me the basics of HTTP requests and routing. The project provides a simple UI to enter any NBA player, past or present, scrapes data from nba.com/stats, and returns a comparison of their regular-season and playoffs performance. The main purpose of the application is to determine whether a given player performs statistically better or worse in the playoffs when compared to their regular season norms.",
+  imageUrls: [
+    "nba.png",
+    "nbaproject2.jpeg",
+    "nbaproject3.png",
+    "nbaproject4.png",
+  ],
   slug: "nba-data-science-project",
   date: "July-August 2023",
+  codeLink: "",
+  demoLink: "https://tomhaene.pythonanywhere.com/",
 };
 
 const factoryWebsite = {
@@ -119,6 +140,24 @@ const factoryWebsite = {
     "solderingStation.png",
   ],
   date: "August-October 2024",
+  codeLink: "https://github.com/McGillEUS/thefactory/tree/develop3",
+  demoLink: "https://factory.mcgilleus.ca/",
+};
+
+const solderingProject = {
+  title: "Temperature-Sensitive Alarm Device",
+  content:
+    "Built a device that sits next to the stove and sounds an alarm when the air temperature exceeds a provided threshold for a certain amount of time, its purpose is to indicate if you left the stove on. It consists of an LCD screen showing the temperature and the time past the threshold. The device consists of a perf board with soldered components that sit on top of an Arduino UNO. The device comes with 3 user-controlled inputs and is powered by the grid using a simple DC power jack.",
+  slug: "nba-data-science-project",
+  imageUrls: [
+    "SolderingProject.jpg",
+    "solderingproject2.jpg",
+    "solderingproject3.jpg",
+    "solderingproject4.jpg",
+  ],
+  date: "January-February 2025",
+  codeLink: "",
+  demoLink: "",
 };
 
 // const stoveProject = {
@@ -175,24 +214,36 @@ function Experience() {
             title={studySync.title}
             imageUrls={studySync.imageUrls}
             description={studySync.content}
-            link="https://chromewebstore.google.com/detail/study-sync/dlgnlhemoahmocicklcanfcoigdkblfa?hl=en-US&utm_source=ext_sidebar"
             date={studySync.date}
+            demoLink={studySync.demoLink}
+            codeLink={studySync.codeLink}
           />
 
           <ProjectSection
             title={factoryWebsite.title}
             imageUrls={factoryWebsite.imageUrls}
             description={factoryWebsite.content}
-            link="https://factory.mcgilleus.ca/"
             date={factoryWebsite.date}
+            demoLink={factoryWebsite.demoLink}
+            codeLink={factoryWebsite.codeLink}
           />
 
           <ProjectSection
             title={nbaProject.title}
             imageUrls={nbaProject.imageUrls}
             description={nbaProject.content}
-            link="https://tomhaene.pythonanywhere.com/"
             date={nbaProject.date}
+            demoLink={nbaProject.demoLink}
+            codeLink={nbaProject.codeLink}
+          />
+
+          <ProjectSection
+            title={solderingProject.title}
+            imageUrls={solderingProject.imageUrls}
+            description={solderingProject.content}
+            date={solderingProject.date}
+            demoLink={solderingProject.demoLink}
+            codeLink={solderingProject.codeLink}
           />
         </div>
       </section>
@@ -254,8 +305,9 @@ type ProjectSectionProps = {
   title: string;
   description: string;
   imageUrls: string[];
-  link: string;
   date: string;
+  demoLink: string;
+  codeLink: string;
 };
 
 function ProjectSection(props: ProjectSectionProps) {
@@ -271,21 +323,31 @@ function ProjectSection(props: ProjectSectionProps) {
 
           <p className="leading-loose pr-5">{props.description}</p>
 
-          <div className="flex gap-5">
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <button className="bg-custom-orange text-sm text-white font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-darker-orange hover:text-cream gap-2">
-                <CodeXml />
-                <p>View Code</p>
-              </button>
-            </a>
+          {(props.codeLink !== "" || props.demoLink !== "") && (
+            <div className="flex gap-5">
+              <a
+                href={props.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-custom-orange text-sm text-white font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-darker-orange hover:text-cream gap-2">
+                  <CodeXml />
+                  <p>View Code</p>
+                </button>
+              </a>
 
-            <a href="mailto:tom@haene.org">
-              <button className="bg-cream text-sm text-black font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl gap-2">
-                <Eye />
-                <p>Live Demo</p>
-              </button>
-            </a>
-          </div>
+              <a
+                href={props.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-cream text-sm text-black font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl gap-2">
+                  <Eye />
+                  <p>Live Demo</p>
+                </button>
+              </a>
+            </div>
+          )}
         </div>
         <div className="flex-1  h-[450px]">
           <ControlledCarousel imageUrls={props.imageUrls} />
@@ -296,7 +358,9 @@ function ProjectSection(props: ProjectSectionProps) {
       <div className="flex xl:hidden flex-col">
         <div className="flex flex-col gap-4 justify-around pt-10 items-center">
           <div>
-            <h2 className="text-2xl lg:text-3xl font-bold text-center">{props.title}</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold text-center">
+              {props.title}
+            </h2>
             <p className="text-center">{props.date}</p>
           </div>
           <div className="h-[300px] md:h-[400px] w-full sm:w-11/12 md:w-10/12 mx-auto">
@@ -312,7 +376,11 @@ function ProjectSection(props: ProjectSectionProps) {
               </button>
             </a>
 
-            <a href="mailto:tom@haene.org">
+            <a
+              href="mailto:tom@haene.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="bg-cream text-sm text-black font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl lg:gap-2 gap-1 w-36 p-3">
                 <Eye />
                 <p>Live Demo</p>
@@ -347,10 +415,6 @@ function ControlledCarousel(props: CarouselProps) {
             alt=""
             className="w-full sm:w-11/12 md:w-10/12  h-[300px] md:h-[400px] mx-auto object-cover opacity-70"
           />
-
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-          </Carousel.Caption>
         </Carousel.Item>
       ))}
     </Carousel>

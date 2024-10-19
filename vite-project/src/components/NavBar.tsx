@@ -10,7 +10,7 @@ function NavBar(props: NavBarProps) {
   return (
     <>
       {/* Mobile Navbar */}
-      <nav className="lg:hidden bg-std-brown h-24 flex justify-between py-3 pl-9 text-cream items-center border-b-2 border-white">
+      <nav className="lg:hidden bg-std-brown h-24 flex justify-between py-3 pl-9 text-cream items-center border-b-2 border-white sticky top-0 left-0 right-0 z-50">
         <h1 className="font-bold text-3xl">ThomasHaene.com</h1>
         <div className="lg:hidden cursor-pointer bg-std-brown p-2 mr-4">
           <button
@@ -27,8 +27,7 @@ function NavBar(props: NavBarProps) {
       </nav>
 
       {/* Desktop Navbar */}
-
-      <nav className="bg-std-brown h-24 hidden lg:flex justify-between text-cream font-nunito items-center px-10 border-b-2 border-white">
+      <nav className="bg-std-brown h-24 hidden lg:flex justify-between text-cream font-nunito items-center px-10 border-b-2 border-white sticky top-0 left-0 right-0 z-50">
         <h1 className="font-bold text-4xl">ThomasHaene.com</h1>
         <div className="flex gap-16 text-xl font-bold pr-5">
           <NavLink
@@ -69,6 +68,14 @@ function NavBar(props: NavBarProps) {
           >
             Experience
           </NavLink>
+
+          {/* <a
+            href="https://dik.gdr.mybluehost.me/"
+            target="_blank"
+            className="border-b-2 border-std-brown hover:text-custom-orange hover:border-custom-orange"
+          >
+            Blog
+          </a> */}
         </div>
       </nav>
     </>

@@ -16,23 +16,25 @@ function Home() {
 
         <p className="text-white font-semibold mt-8 xl:text-lg text-center xl:text-start">
           Welcome to my portfolio site! My interests are primarily in
-          Telecommunications and Computer Networks, and in my free-time I enjoy
-          making websites. Feel free to contact me at my email, and I encourage
-          you to have a look at my work!
+          Telecommunications and Networks, and in my free-time I enjoy making
+          websites. Feel free to contact me at my email, and I encourage you to
+          have a look at my work!
         </p>
 
         {/* Desktop Buttons */}
 
         <div className="hidden xl:flex justify-start gap-10 xl:gap-16 mt-14">
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
-            <button className="bg-custom-orange text-xs xl:text-sm text-white font-black rounded-3xl p-2 xl:p-4 flex items-center justify-center w-32 xl:w-44 hover:bg-darker-orange hover:text-cream">
-              View Resume <FileText />
+            <button className="bg-custom-orange text-sm text-white font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-darker-orange hover:text-cream gap-2">
+              <FileText />
+              <p>View Resume</p>
             </button>
           </a>
 
           <a href="mailto:tom@haene.org">
-            <button className="bg-cream text-xs xl:text-sm text-black font-black rounded-3xl p-2 xl:p-4 flex items-center justify-center w-32 xl:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl">
-              Email me <Mail />
+            <button className="bg-cream text-sm text-black font-black rounded-3xl p-4 flex items-center justify-center w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl gap-2">
+              <Mail />
+              <p>Email Me</p>
             </button>
           </a>
         </div>
@@ -42,14 +44,14 @@ function Home() {
         <div className="flex xl:hidden justify-center gap-5 mt-10">
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="bg-custom-orange text-sm text-white font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-darker-orange hover:text-cream lg:gap-2 gap-1 w-36 p-3">
-              <FileText size={16} />
-              <p>View Resume</p>
+              <FileText />
+              <p>View Rsume</p>
             </button>
           </a>
 
           <a href="mailto:tom@haene.org">
             <button className="bg-cream text-sm text-black font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl lg:gap-2 gap-1 w-36 p-3">
-              <Mail size={16} />
+              <Mail />
               <p>Email me</p>
             </button>
           </a>
