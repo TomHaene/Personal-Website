@@ -155,19 +155,10 @@ const solderingProject = {
     "solderingproject3.jpg",
     "solderingproject4.jpg",
   ],
-  date: "January-February 2025",
+  date: "January-February 2024",
   codeLink: "",
   demoLink: "",
 };
-
-// const stoveProject = {
-//   title: "NBA Data Science Project",
-//   content:
-//     "A full-stack web application using Django for the backend and vanilla HTML, CSS, and JS for the frontend. This was my first time creating a web app with a backend, teaching me the basics of HTTP requests and routing. The project provides a simple UI to enter any NBA player, past or present, scrapes data from nba.com/stats, and returns a comparison of their regular-season and playoffs performance.",
-//   imgName: "nbaProject.png",
-//   slug: "nba-data-science-project",
-//   date: "July-August 2023",
-// };
 
 function Experience() {
   return (
@@ -261,7 +252,7 @@ type containerProps = {
 
 function Container(props: containerProps) {
   return (
-    <div className="relative bg-cream  max-w-[600px] rounded-md p-2 mb-5 pl-5 lg:pl-10">
+    <div className="relative bg-cream  max-w-[600px] rounded-md p-4 mb-5 pl-5 lg:pl-10">
       {/* Circle before each container */}
       <div className="absolute w-4 h-4 bg-white rounded-full left-[-1.25rem] lg:left-[-2.5rem] top-2.5 transform -translate-x-1/2"></div>
       <small className="font-bold">
@@ -367,26 +358,27 @@ function ProjectSection(props: ProjectSectionProps) {
             <ControlledCarousel imageUrls={props.imageUrls} />
           </div>
           <p className="leading-loose px-5 md:px-32">{props.description}</p>
+          {(props.codeLink !== "" || props.demoLink !== "") && (
+            <div className="flex justify-center gap-5">
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <button className="bg-custom-orange text-sm text-white font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-darker-orange hover:text-cream lg:gap-2 gap-1 w-36 p-3">
+                  <CodeXml />
+                  <p>View Code</p>
+                </button>
+              </a>
 
-          <div className="flex justify-center gap-5">
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <button className="bg-custom-orange text-sm text-white font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-darker-orange hover:text-cream lg:gap-2 gap-1 w-36 p-3">
-                <CodeXml />
-                <p>View Code</p>
-              </button>
-            </a>
-
-            <a
-              href="mailto:tom@haene.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-cream text-sm text-black font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl lg:gap-2 gap-1 w-36 p-3">
-                <Eye />
-                <p>Live Demo</p>
-              </button>
-            </a>
-          </div>
+              <a
+                href="mailto:tom@haene.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-cream text-sm text-black font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-custom-gray hover:text-gray-900 shadow-2xl lg:gap-2 gap-1 w-36 p-3">
+                  <Eye />
+                  <p>Live Demo</p>
+                </button>
+              </a>
+            </div>
+          )}
         </div>
       </div>
 

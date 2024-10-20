@@ -45,7 +45,7 @@ function Home() {
           <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="bg-custom-orange text-sm text-white font-black rounded-3xl lg:p-4 flex items-center justify-center lg:w-44 hover:bg-darker-orange hover:text-cream lg:gap-2 gap-1 w-36 p-3">
               <FileText />
-              <p>View Rsume</p>
+              <p>View Resume</p>
             </button>
           </a>
 
