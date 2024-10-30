@@ -19,7 +19,7 @@ const workExperience: Container[] = [
     startDate: "May 2024",
     endDate: "August 2024",
     description: [
-      "The Populus Solidarity Cooperative is dedicated to empowering non-profits and cooperatives. During this project, I collaborated with a skilled team of software engineeris to build a digital dashboard for Populus' clients. This dashboard, offered as a SaaS product, enables non-profits and cooperatives to efficiently manage critical governmental compliance tasks while also providing valuable resources for securing funding",
+      "The Populus Solidarity Cooperative is dedicated to empowering non-profits and cooperatives. During this project, I collaborated with a skilled team of software engineeris to build a digital dashboard for Populus' clients. This dashboard, offered as a SaaS product, enables non-profits and cooperatives to efficiently manage critical governmental compliance tasks while also providing valuable resources for securing funding.",
       "The tech-stack we used for the frontend was React, Remix.run, TailwindCSS and React Aria as a component library. We also used Payload CMS as our backend.",
       "I received the Global Challenges Award (GCA) from McGill University, which funded my work on this impactful project. ",
       "While my main ambition isn't to become a Web-Developer, I learned many valuable lessons from this experience, most notably I learned first-hand how experienced engineers work together to efficiently build, test and deploy real world software, and observed the software development cycle in action.",
@@ -32,7 +32,7 @@ const workExperience: Container[] = [
     startDate: "May 2024",
     endDate: "Present",
     description: [
-      "Photonics is the field of engineering that deals with using EM Radiation near the visible range for various applications. Common examples of application are in Fiber Optic cables, Optical Computing",
+      "Photonics is the field of engineering that deals with using EM Radiation near the visible range for various applications. Common examples of application are in Fiber Optic cables, Optical Computing and photonic devices like lasers.",
       "I began as a summer research intern in May 2025, but I’ve decided to continue working with the group part-time during my studies. This decision reflects both my passion for what I’ve learned and the meaningful impact I’ve been able to make.",
       "I've worked on a few projects, making contributions wherever needed, however the focus of the projects has always been on Fiber Optics/Light communication, employing concepts from telecommunications and physics.",
       "This summer, I contributed to a free-space optical communication system, which aspires to revolutionize MRI implementation. My role involved automating the measurement gathering process using MATLAB. By connecting to all lab instruments through the SCPI Instrument command language, I successfully enhanced the efficiency and integrity of the data collection process.",

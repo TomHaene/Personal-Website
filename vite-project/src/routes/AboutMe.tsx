@@ -38,21 +38,24 @@ function AboutMe() {
               British International School Abu Dhabi
             </a>
             {""} and earned my IGCSE certificate and an IB Diploma with a score
-            of  <strong className="text-custom-orange"> 41/45</strong> (placing in the top  <strong className="text-custom-orange"> 1%</strong> of international students). Now,
-            I'm pursuing a Bachelor's in Electrical Engineering at McGill
-            University, <strong className="text-custom-orange">ranked 29th globally</strong>  by QS World University Rankings
-            2024.
+            of <strong className="text-custom-orange"> 41/45</strong> (placing
+            in the top <strong className="text-custom-orange"> 1%</strong> of
+            international students). Now, I'm pursuing a Bachelor's in
+            Electrical Engineering at McGill University,{" "}
+            <strong className="text-custom-orange">ranked 29th globally</strong>{" "}
+            by QS World University Rankings 2024.
           </p>
           <h2 className="font-semibold text-2xl mt-7">
             Career Goals & Aspirations
           </h2>
           <p className="text-sm lg:text-base mt-2">
             While the future may be uncertain, I know that I want to pursue
-            <strong className="text-custom-orange"> graduate studies</strong>  in telecommunications, a field that fascinates me.
-            The transmission of information over distances—often at frequencies
-            far beyond human perception—feels almost magical. My goal is to
-            explore the underlying physics and engineering of these systems and
-            use that knowledge to make meaningful contributions to the field.
+            <strong className="text-custom-orange"> graduate studies</strong> in
+            telecommunications, a field that fascinates me. The transmission of
+            information over distances—often at frequencies far beyond human
+            perception—feels almost magical. My goal is to explore the
+            underlying physics and engineering of these systems and use that
+            knowledge to make meaningful contributions to the field.
           </p>
           <h2 className="font-semibold text-2xl mt-7">
             My Hobbies & Interests
@@ -74,8 +77,8 @@ function AboutMe() {
           My Skills
         </h1>
         <p className="mt-3 px-5 text-center text-custom-gray">
-          I'm Thomas Haene - a student currently in his 4th year of Electrical
-          Engineering at McGill University.
+          I blend technical skills in electrical and software engineering with
+          strong interpersonal abilities. Here are the key areas where I excel:
         </p>
 
         {/* Use flex-wrap and responsive widths */}
