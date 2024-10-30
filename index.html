@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tom's website V2</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <script src="./script.js"></script>
+
+    
+    <!-- How to close the side bar in VS code: CTRL B  -->
+    <!-- Also to comment a line use CTRL / this is huge -->
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"> Thomas Haene </div>
+    
+            </div>
+            
+            <div class="nav-items">
+                <a href="#home"> Home </a>
+                <a href="#about"> About</a>
+                <a href="#skills"> Skills</a>
+                <a href="#projects"> Projects</a>
+                <!-- <a href="#home" onclick="french"> Passer au français </a> -->
+            
+            </div>
+
+
+            <span class="mobileNavMenu"><div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.4rem; background-color: #4EE4DA; color: black;">
+                  Menu
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#home">Home</a></li>
+                  <li><a class="dropdown-item" href="#about">About</a></li>
+                  <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                  <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact me</a></li>
+                  <!-- <li><a class="dropdown-item" onclick="french" href="#home">Change to French</a></li> -->
+                </ul>
+              </div></span>
+            
+    
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero"> 
+            <span id="home"></span>
+            <div class="hero-container">
+                <h1> Hi, I'm <span>Thomas Haene</span></h1>
+                <p> Full time Electrical Engineering student with a passion for <br> <span>Software Development</span></p>
+                <div class="button-container">
+                    <a href="MasterResume.pdf" target="_blank"><button> See Resume</button></a>
+                    <a href="#contact" class="contactbutton"><button> Contact Me </button></a>
+                </div>
+               
+            
+            </div>
+        </section>  
+        
+        <section class="aboutme">
+
+            
+            <h1> About Me</h1>
+
+            <span id="about"></span>
+
+
+            <img src="GradPic.jpg" class="about_me_image">
+
+
+            <p class="aboutp">
+                Hello, I am Thomas, a passionate and results-driven apsiring engineering student, with a diverse background in all things tech, ranging from software to hardware. I pride myself as an active learner, who always enjoys the process of learning new skills.
+
+                My journey began with an IB diploma in Abu Dhabi, UAE, where I discovered my interest in Physics. This then led me to McGill university in Montreal, where I am now entering my third year in an electrical undergraduate engineering degree. Over the past year I've had the oppoturnity to work on a variety of projects, most of which have been out of interest outside of the classroom. These have allowed me to expand my skillset beyond just curriciulum-based content, while also allowing me to explore topics of my own personal interest.
+
+                I am excited to collaborate with like-minded individuals and organizations who share the same commitment to creativity and excellence. Feel free to reach out and let's create something remarkable together.
+                
+                
+            </p>
+
+        
+
+
+           
+        </section>
+
+        <section class="skills">
+            <h1>My Skills</h1>
+            <span id="skills"></span>
+
+            <div class="skillContainer">
+                <div class="skill1"> 
+                    <img src="htmlicon.png" alt="">
+                    <h3>HTML 5</h3>
+                    <p>Used in creating this site, and also for my NBA web application project.</p>
+                </div>
+                <div class="skill2">
+                    <img src="cssicon.png" alt="">
+                    <h3>CSS</h3>
+                    <p>Whenever I use HTML I also use CSS. These two skills are very useful whenever I need a project to have a simple and clean UI.</p>
+                </div>
+                <div class="skill3"> 
+                    <img src="Assembly.png" alt="" style="border-radius: 15px;">
+                    <h3>ARMv7-A Assembly Language</h3>
+                    <p>Studied ARMv7-A specifically in class, but the concepts learned allow me to program in any low level assembly language, regardless of the specific ISA.</p>
+                </div>
+                <div class="skill4"> 
+                    <img src="javaicon.png" alt="javaicon">
+                    <h3>Java</h3>
+                    <p>Skilled in the (OOP) architecture, and have applied this through android mobile app development, where it's used as a back-end langauge.</p>
+                </div>
+                <div class="skill5"> 
+                    <img src="pythonicon.png" alt="">
+                    <h3>Python</h3>
+                    <p>Use this language for Machine Learning, and also for web application development through Django.</p>
+                </div>
+                <div class="skill6">
+                    <img src="cicon.png" alt="">
+                    <h3>C</h3>
+                    <p>Use this lanauge for my microcontroller projects and also on the McGill Robotics team, in particuar in the Arduino IDE and the STM32Cube IDE.</p>
+                </div>
+            </div>
+
+            <div class="buttonContainer">
+                <button data-language class="languagesButton" onclick="languagesMenu()" > Languages </button>
+                <button data-software class="softwaresButton" onclick="softwareMenu()"> Software</button>
+                <button data-hardware class="hardwaresButton" onclick="hardwareMenu()"> Hardware</button>
+            </div>
+
+            
+
+
+        </section>
+
+    
+        <section class="projects">
+            <h1>My Projects</h1>
+            <span id="projects"></span>
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="margin-top: 5%;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="projectCard">
+                        <div class="cardImage1"></div>
+                        <h2>Portfolio site</h2>
+                        <p>This is the site you are currently visiting. Made using HTML, CSS and JavaScript.</p>
+                        <a href="https://github.com/TomHaene/Tom-s-website-V2" target="_blank"><button>View source code</button></a>
+                    </div>   
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="projectCard">
+                        <div class="cardImage2"></div>
+                        <h2>Python NBA API project</h2>
+                        <p>This project taught me the Django back-end framework, which I used in combination with python back-end business logic.</p>
+                        <a href="http://tomhaene.pythonanywhere.com/" target="_blank"><button>See the project</button></a>
+                    </div>    
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="projectCard">
+                        <div class="cardImage3"></div>
+                        <h2>My YouTube Channel!</h2>
+                        <p>In my free time I make videos on edcuational topics I am passionate about, and also short mini-film type videos to document different experiences.</p>
+                        <a href="https://www.youtube.com/channel/UCL1lLG5cR4k3GaLS66aDshw" target="_blank"><button>See my channel</button></a>
+                    </div>    
+                  </div>
+    
+                  <!-- <div class="carousel-item">
+                       //Add a new item here 
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        
+
+
+            
+           
+            
+
+        
+        </section>
+
+        <section class="contact">
+
+            <h1>Contact me</h1>
+
+            <span id="contact"></span>
+
+            <form action="https://formsubmit.co/tom@haene.org" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+                <div class="form-group">
+                    <label for="">Email Address</label>
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required id="email" style="height: 40px; font-size: 1.3rem;">
+                </div>
+                
+                
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-group">
+                    <label for="">Your name</label>
+                    <input type="name" name="name" class="form-control" placeholder="Enter your name" id="name" style="height: 40px; font-size: 1.3rem;" >
+                </div>
+                
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <br>
+                    <textarea name="message" cols="30" rows="3" placeholder="Enter your message" required id="message"></textarea>
+        
+                </div>
+
+                <br>
+
+                <button type="submit" class="btn btn-large btn-primary contactbutton" style="width:100px; height: 35px; font-size: 1.3rem; color: black;"> Submit </button>
+
+
+
+
+            </form>
+
+
+
+
+
+
+        </section>
+    
+
+    </main>
+    
+
+    
+    <footer>
+        <div class="footerContainer">
+            <div class="copyright">
+                Copyright © Thomas Haene 2022
+            </div>
+            <div class="icons">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/thomas-haene-a68b44220/">
+                        <img src="linkedin.png" alt="" style="border-radius: 21px;">
+                    </a>
+                   
+                </div>
+                <div class="github">
+                    <a href="https://github.com/TomHaene">
+                        <img src="github.png" alt="" style="border-radius: 18px;">
+                    </a>
+                </div>
+                <div class="email">
+                    <a href="mailto:tom@haene.org"><img src="email.png" alt="" style="border-radius: 20px;"></a>
+                </div>
+
+            </div>
+
+
+
+
+            
+        </div>
+
+    </footer>
+
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ <script>
+   
+
+ 
+
+
+
+ </script>
+
+
+
+    
+</body>
+
+    
+
+      
+
+
+
+</html>

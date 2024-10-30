@@ -1,0 +1,896 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
+    /* border: 2px solid hotpink; */
+}
+
+
+html{
+    font-size: 62.5%; 
+    /*this is 10px*/
+
+}
+
+
+
+/*-----------------Nav section-----------------------*/ 
+nav{
+    height:9vh;
+    background-color: #181a1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 9999;
+    
+}  
+
+nav a, .logo{
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color:#fff;
+}
+
+nav a{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+nav a:hover{
+    color:#e44e58;
+}
+
+
+nav .logo{
+    color: #e44e58;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.mobileNavMenu{
+    display: none;
+}
+
+
+.hamburgerMenu{
+    cursor: pointer;
+    display: none;
+}
+
+
+/*-----------------Nav section-----------------------*/ 
+
+
+
+
+
+
+
+/*-----------------Hero section-----------------------*/ 
+.hero{
+    background-color: #181a1b;
+    color: #fff;
+
+   
+}
+
+.hero-container{
+    height:100vh;
+    padding-top: 9%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container p{
+    margin-top:23px;
+
+    line-height: 1.6;
+    font-size:1.8rem;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 5rem;
+    margin-top: 1vh;
+}
+
+.hero h1 span{
+    color: #e44e58;
+}
+
+.button-container{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+
+
+
+.button-container a{
+    margin: 0 10px 0 10px;
+    
+ 
+}
+
+.button-container button{
+     margin: 0 1%;
+    background-color: #4EE4DA;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.button-container button:hover{
+    cursor: pointer;
+    background-color: #e44e58;
+}
+
+
+
+
+
+/*---------------- Hero section-----------------------*/ 
+
+
+
+
+
+
+
+
+/*-----------------About me section-----------------------*/ 
+.aboutme{
+    background-color: #002333;
+    color: #fff;
+    height:96vh;
+    position: relative;
+}
+
+.aboutme h1{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 38px;
+    font-size: 2.2rem;
+}
+
+.about_me_image{
+    position: absolute;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    width: 11%;
+    min-width: 90px;
+    top: 90px;
+    border-radius: 50%; /* Make the image circular */
+
+}
+
+
+
+
+.aboutp{
+    position: absolute;
+    height: max-content;
+    width: 70%;
+    left: 50%;
+    line-height: 30px;
+    transform: translateX(-50%);
+    top: 45%;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+#about{
+    position: relative;
+    top:-5%;
+}
+
+
+
+/*-----------------About me section-----------------------*/ 
+
+
+
+
+
+
+
+/*-----------------Skills section-----------------------*/ 
+.skills{
+    background-color: #181a1b;
+    color: #fff;
+    height:100vh;
+    position: relative;
+}
+
+#skills{
+    position: relative;
+    top:-6%;
+}
+
+.skills h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+   font-size: 2.2rem;
+   display: inline-block;
+}
+.skillContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 160px 160px 160px;
+    grid-row-gap: 10%;
+    grid-column-gap: 8%;
+    padding: 3%;
+    padding-top:9%;
+
+}
+
+
+.skillContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skillContainer img{
+    width: 53px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.skillContainer h3{
+    margin-bottom: 3%;
+    font-size: 2rem;;
+}
+.skillContainer p{
+    margin-bottom: 2%;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+
+.buttonContainer{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    bottom: 17%;
+    
+}
+
+.buttonContainer button{
+    margin: 0 1%;
+    background-color: #4EE4DA;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttonContainer button:hover {
+    background-color: #e44e58;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .buttonContainer button.languagesButton{
+    background-color: #e44e58;
+  }
+
+  .buttonContainer button.softwaresButton{
+    width: fit-content;
+
+  }
+
+
+/*-----------------Skills section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Projects section-----------------------*/ 
+
+.projects{
+    background-color: #002333;
+    color: #fff;
+    height:95vh;
+    padding-top: 30px;
+}
+
+
+.swiper{
+    width: 94vw;
+    /* max-width: 930px; */
+    margin-top: 5%;
+    height: 520px;
+
+}
+
+
+.swiper-slide {
+    display: inline-block
+  }
+  
+
+
+.projects h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+   font-size: 2.2rem;
+   display: inline-block;
+}
+
+#projects{
+    position: relative;
+    top:-11%;
+}
+
+
+
+.projectCard{
+    width: 19vw;
+    min-width: 230px;
+    height: 370px;
+    margin: 10px;
+    margin-top: 60px;
+    border-radius: 15px;
+    position: relative;
+    margin-inline: auto;
+    background-color:#181a1b;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+
+}
+
+.projectCard div{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+
+}
+
+.projectCard h2{
+    padding: 10px;
+
+}
+
+.projectCard p{
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+.cardImage1{
+    background-image: url(websitepic.png);
+    background-position: center;
+}
+
+.cardImage2{
+    background-image: url(Luka.png);
+    background-position: center;
+}
+
+.cardImage3{
+    background-image: url(YTChannelPic.png);
+
+}
+
+.cardImage4{
+    background-image: url(JTY.png);
+    background-position: center -47px;
+}
+
+.projectCard a{
+    width: 125px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-inline: auto;
+
+}
+
+
+.projectCard button{
+    background-color:#4EE4DA;
+    text-align: center;
+    display: block;
+    padding: 11px 15px;
+    
+}
+
+.projectCard button:hover{
+    cursor: pointer;
+    background-color: #e44e58;
+}
+
+
+.third{
+    position: relative;
+
+}
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-right: 23vw;
+    margin-left: 23vw;
+  }
+
+
+/*-----------------Projects section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Contact section-----------------------*/ 
+
+.contact{
+    height: auto;
+    background-color: #181a1b;
+    padding: 30px;
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+#contact{
+    position: relative;
+    top:-11%;
+}
+.contact .form-group{
+    margin-top: 10px;
+
+}
+
+
+.contact h1{
+
+    text-decoration: underline;
+}
+
+
+.contact button{
+    background-color: #4EE4DA;
+}
+.contact button:hover{
+    background-color: #e44e58;
+
+}
+
+
+
+
+
+/*-----------------Contact section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Footer section-----------------------*/ 
+
+footer{
+    background-color: #181a1b;
+    padding: 12px;
+}
+
+
+.footerContainer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+
+
+}
+
+.copyright{
+    line-height: 1.5;
+    color: #fff;
+    margin-right: 7px;
+}
+
+
+footer img{
+    height:40px;
+    background-color:#fff
+}
+
+
+.email{
+    transition: transform 0.2s ease-out;
+}
+
+.email:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.github{
+    transition: transform 0.2s ease-out;
+}
+
+.github:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.linkedin{
+    transition: transform 0.2s ease-out;
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+
+
+
+.icons{
+    display:flex;
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+.icons div{
+    margin-right:15px;
+    margin-left:15px;
+}
+
+
+
+
+
+
+
+
+/*-----------------Footer section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Buttons section-----------------------*/ 
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: lightskyblue;
+    width:150px;
+    color: black;
+    font-size: 17px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+/*-----------------Buttons section-----------------------*/ 
+
+
+
+
+
+
+
+
+
+
+
+/*---------------Mobile Version-------------------------*/
+
+
+@media screen and (max-width:900px) {
+
+
+     /*--------Mobile NavBar ---------------*/
+
+     .nav-items{
+        display: none;
+     }
+
+     nav .logo{
+        font-size: 1.7rem;
+    }
+
+    .mobileNavMenu{
+        display: inline-block;
+        color: #fff;
+        font-size: 2rem;
+        margin-right: 5%;
+    }
+
+
+
+    .dropdown-toggle{
+        min-width: 95px; 
+        min-height: 30px;
+    }
+    
+   
+
+
+      /*--------Mobile NavBar ---------------*/
+
+
+
+
+
+
+
+      /*--------Mobile Hero section ---------------*/
+
+      
+      .hero h1{
+        margin-top: 10vh;
+        text-align: center;
+        padding-left: 6%;
+        padding-right: 6%;
+        font-size: 4rem;
+    }
+
+    .hero-container p{
+        margin-top:23px;
+        padding-left: 4%;
+        padding-right: 4%;;
+        line-height: 1.6;
+        font-size:1.4rem;
+        
+    }
+
+    .contactbutton{
+        display: none;
+
+    }
+      /*--------Mobile Hero section ---------------*/
+      
+      
+
+ /*--------Mobile Skills Section -------*/
+
+
+
+    .aboutme{
+        height: 900px;
+    }
+
+
+
+    .aboutp{
+        width:75%;
+        left: 50%;
+        top:26%;
+        transform: translateX(-50%);
+    }
+
+    
+
+    
+
+
+
+
+
+ /*--------Mobile Skills Section -------*/
+
+
+
+
+
+
+    /*--------Mobile Skills Section -------*/
+
+    .skills{
+        height: 1300px;
+    }
+
+
+    .skillContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        padding:0% 3%;
+        grid-row-gap: 1.7%;
+        padding-top: 24vh;
+    
+      }
+
+      .buttonContainer{
+        position: absolute;
+        width: 90%;
+        bottom: 90%;
+        left:50%;
+        transform:translate(-50%);
+
+    }
+
+    .buttonContainer button{
+        padding: 1em;
+        width: auto;
+        font-size: 1.4rem;
+    }
+
+    .buttonContainer button:hover{
+        width: auto;
+        padding: 1em;
+        font-size: 1.4rem;
+
+
+
+    }
+    
+
+    /*--------Mobile Skills Section -------*/
+
+
+
+
+
+
+
+
+
+    /*--------Mobile Projects Section -------*/
+
+    #projects{
+        position: relative;
+        top:-22%;
+    }
+
+    .projects{
+        height: 600px;
+    }
+
+
+
+    .projects_container{
+        width: 90vw;
+        
+        
+       
+    }
+
+    .projectCard{
+        margin-inline: auto;
+    }
+
+
+    
+
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      margin-right: 9.5vw;
+      margin-left: 9.5vw;
+    }
+  
+
+
+
+
+    /*--------Mobile Projects Section -------*/
+   
+      
+
+    
+    
+
+
+
+
+
+
+
+
+}

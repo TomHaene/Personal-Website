@@ -1,0 +1,244 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="portfolio_site_details.css"&gt;
+    &lt;title&gt;Portoflio site code&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="center_section"&gt;
+        &lt;div class="header"&gt;
+            Thomas Haene's portfolio site
+        &lt;/div&gt;
+        &lt;div class="sub_header"&gt;
+            The code for this site is provided on this page. Do note that updates are often made to this site, so the code here might not always reflect the most recent version
+        &lt;/div&gt;
+
+        &lt;div class="htmlheader"&gt;The HTML code:&lt;/div&gt;
+
+        &lt;div class="html-container"&gt;
+            &lt;pre&gt;
+                &lt;code&gt;
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    
+                    
+                        &lt;title&gt;Tom's website V2&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                        &lt;script src="./script.js"&gt;&lt;/script&gt;
+                        
+                        &lt;!-- How to close the side bar in VS code: CTRL B  --&gt;
+                        &lt;!-- Also to comment a line use CTRL / this is huge --&gt;
+                        
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                        &lt;header&gt;
+                            &lt;nav&gt;
+                                &lt;div class="logo"&gt; Thomas Haene &lt;/div&gt;
+                        
+                                &lt;/div&gt;
+                                
+                                &lt;div class="nav-items"&gt;
+                                    &lt;a href="/index.html"&gt; Home &lt;/a&gt;
+                                    &lt;a href="#about"&gt; About&lt;/a&gt;
+                                    &lt;a href="#skills"&gt; Skills&lt;/a&gt;
+                                    &lt;a href="#projects"&gt; Projects&lt;/a&gt;
+                                    &lt;a href="/contact.html" onclick="french"&gt; Change To French&lt;/a&gt;
+                                
+                                &lt;/div&gt;
+                    
+                    
+                                &lt;span class="mobileNavMenu"&gt;Menu&lt;/span&gt;
+                                
+                        
+                            &lt;/nav&gt;
+                        &lt;/header&gt;
+                        
+                        &lt;main&gt;
+                            &lt;section class="hero"&gt; 
+                                &lt;div class="hero-container"&gt;
+                                    &lt;h1&gt; Hi, I'm &lt;span&gt;Thomas Haene&lt;/span&gt;&lt;/h1&gt;
+                                    &lt;p&gt; Full time Electrical Engineering student with a passion for &lt;br&gt; &lt;span&gt;Software Development&lt;/span&gt;&lt;/p&gt;
+                                    &lt;div class="button-container"&gt;
+                                        &lt;input type="submit" value= "See resume" class='resumebutton' onclick="openResume()"/&gt;
+                                        &lt;input type="submit" value= "Contact me" class='resumebutton'/&gt;
+                                    
+                                    &lt;/div&gt;
+                                   
+                                
+                                &lt;/div&gt;
+                            &lt;/section&gt;  
+                            
+                            &lt;section class="aboutme"&gt;
+                                &lt;h1&gt; About Me&lt;/h1&gt;
+                    
+                                &lt;span id="about"&gt;&lt;/span&gt;
+                    
+                                &lt;p class="aboutp"&gt;
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque odit magnam mollitia facere ex nisi velit enim unde aspernatur ullam odio, incidunt deserunt reprehenderit, nulla numquam. Praesentium, magni molestias.
+                                &lt;/p&gt;
+                    
+                            
+                    
+                    
+                               
+                            &lt;/section&gt;
+                    
+                    
+                    
+                    
+                        
+                        
+                            &lt;section class="skills"&gt;
+                                &lt;h1&gt;My Skills&lt;/h1&gt;
+                                &lt;span id="skills"&gt;&lt;/span&gt;
+                    
+                                &lt;div class="skillContainer"&gt;
+                                    &lt;div class="skill1"&gt; 
+                                        &lt;img src="htmlicon.png" alt=""&gt;
+                                        &lt;h3&gt;HTML 5&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="skill2"&gt;
+                                        &lt;img src="cssicon.png" alt=""&gt;
+                                        &lt;h3&gt;CSS&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="skill3"&gt; 
+                                        &lt;img src="JavaScripticon.png" alt=""&gt;
+                                        &lt;h3&gt;JavaScript&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="skill4"&gt; 
+                                        &lt;img src="javaicon.png" alt="javaicon"&gt;
+                                        &lt;h3&gt;Java&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="skill5"&gt; 
+                                        &lt;img src="pythonicon.png" alt=""&gt;
+                                        &lt;h3&gt;Python&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="skill6"&gt;
+                                        &lt;img src="cicon.png" alt=""&gt;
+                                        &lt;h3&gt;C&lt;/h3&gt;
+                                        &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                    
+                                &lt;div class="buttonContainer"&gt;
+                                    &lt;button data-language class="languagesButton" onclick="languagesMenu()" &gt; Language &lt;/button&gt;
+                                    &lt;button data-software class="softwaresButton" onclick="softwareMenu()"&gt; Software&lt;/button&gt;
+                                    &lt;button data-hardware class="hardwaresButton" onclick="hardwareMenu()"&gt; Hardware&lt;/button&gt;
+                                &lt;/div&gt;
+                    
+                                
+                    
+                    
+                            &lt;/section&gt;
+                    
+                        
+                            &lt;section class="projects"&gt;
+                                &lt;h1&gt;My Projects&lt;/h1&gt;
+                                &lt;span id="projects"&gt;&lt;/span&gt;
+                               
+                                
+                    
+                    
+                                &lt;div class="projectsContainer"&gt;
+                                  
+                                   
+                    
+                                    &lt;div class="projectCard"&gt;
+                                        &lt;div class="cardImage1"&gt;&lt;/div&gt;
+                                        &lt;h2&gt;Portfolio site&lt;/h2&gt;
+                                        &lt;p&gt;This is the site you are currently visiting. Made using HTML, CSS and JavaScript.&lt;/p&gt;
+                                        &lt;button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'"&gt;Read more&lt;/button&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="projectCard"&gt;
+                                        &lt;div class="cardImage2"&gt;&lt;/div&gt;
+                                        &lt;h2&gt;"Teach yourself" app &lt;/h2&gt;
+                                        &lt;p&gt;Built for the Android play store. The app allows users to create categories and save audio and video recordings in one place.&lt;/p&gt;
+                                        &lt;button class="1stProject" onclick="window.location.href = 'Teach_yourself.html'"&gt;Read more&lt;/button&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="third"&gt;
+                                        &lt;div class="arrows"&gt;
+                                            &lt;img src="leftarrow.png" alt="" class="leftArrow" onclick="leftArrow"&gt;
+                                            &lt;img src="rightarrow.png" alt="" class="rightArrow" onclick="rightArrow"&gt;
+                                            
+                                        &lt;/div&gt;
+                                        &lt;div class="projectCard"&gt;
+                                            &lt;div class="cardImage3"&gt;&lt;/div&gt;
+                                            &lt;h2&gt;Python NBA API project&lt;/h2&gt;
+                                            &lt;p&gt;This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic&lt;/p&gt;
+                                            &lt;button class="1stProject" onclick=""&gt;Read more&lt;/button&gt;
+                                        &lt;/div&gt;     
+                    
+                                    &lt;/div&gt;
+                                    
+                                    
+                                    
+                                    
+                                &lt;/div&gt;
+                               
+                                
+                    
+                            
+                            &lt;/section&gt;
+                        
+                    
+                        &lt;/main&gt;
+                        
+                    
+                        
+                        &lt;footer&gt;
+                            &lt;div class="footerContainer"&gt;
+                                &lt;div class="copyright"&gt;
+                                    Copyright © Thomas Haene 2022
+                                &lt;/div&gt;
+                                &lt;div class="icons"&gt;
+                                    &lt;div class="linkedin"&gt;
+                                        &lt;a href="https://www.linkedin.com/in/thomas-haene-a68b44220/"&gt;
+                                            &lt;img src="linkedinwhite.png" alt=""&gt;
+                                        &lt;/a&gt;
+                                       
+                                    &lt;/div&gt;
+                                    &lt;div class="github"&gt;
+                                        &lt;a href="https://github.com/TomHaene"&gt;&lt;img src="githubwhite.png" alt=""&gt;&lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="email"&gt;
+                                        &lt;a href=""&gt;&lt;img src="emailwhite.png" alt=""&gt;&lt;/a&gt;
+                                    &lt;/div&gt;
+                    
+                                &lt;/div&gt;
+                    
+                    
+                    
+                    
+                                
+                            &lt;/div&gt;
+                    
+                        &lt;/footer&gt;
+                    
+                    
+                        
+                    &lt;/body&gt;
+                    
+                    
+                    &lt;/html&gt;
+                &lt;/code&gt;
+            &lt;/pre&gt;
+        &lt;/div&gt;
+
+
+    &lt;/div&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
