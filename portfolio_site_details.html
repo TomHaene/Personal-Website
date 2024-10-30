@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio_site_details.css">
+    <link rel="stylesheet" href="prism.css">
+
+    <title>Portoflio site code</title>
+</head>
+
+<body>
+    <div class="center_section">
+        <div class="header">
+            Thomas Haene's portfolio site: The code behind it
+        </div>
+        <div class="sub_header">
+            The code for this site is provided on this page. Do note that updates are often made to this site, so the
+            code here might not always reflect the most recent version
+        </div>
+
+        <div class="htmlheader">The HTML code:</div>
+
+        <div class="html-container">
+            <pre>
+                <code class="language-html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;link rel="stylesheet" href="portfolio_site_details.css"&gt;
+                        &lt;title&gt;Portoflio site code&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div class="center_section"&gt;
+                            &lt;div class="header"&gt;
+                                Thomas Haene's portfolio site
+                            &lt;/div&gt;
+                            &lt;div class="sub_header"&gt;
+                                The code for this site is provided on this page. Do note that updates are often made to this site, so the code here might not always reflect the most recent version
+                            &lt;/div&gt;
+
+                            &lt;div class="htmlheader"&gt;The HTML code:&lt;/div&gt;
+
+                            &lt;div class="html-container"&gt;
+                                &lt;pre&gt;
+                                    &lt;code&gt;
+                                        &lt;!DOCTYPE html&gt;
+                                        &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                            &lt;meta charset="UTF-8"&gt;
+                                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                        
+                                        
+                                            &lt;title&gt;Tom's website V2&lt;/title&gt;
+                                            &lt;link rel="stylesheet" href="style.css"&gt;
+                                            &lt;script src="./script.js"&gt;&lt;/script&gt;
+                                            
+                                            &lt;!-- How to close the side bar in VS code: CTRL B  --&gt;
+                                            &lt;!-- Also to comment a line use CTRL / this is huge --&gt;
+                                            
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                        
+                                            &lt;header&gt;
+                                                &lt;nav&gt;
+                                                    &lt;div class="logo"&gt; Thomas Haene &lt;/div&gt;
+                                            
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class="nav-items"&gt;
+                                                        &lt;a href="/index.html"&gt; Home &lt;/a&gt;
+                                                        &lt;a href="#about"&gt; About&lt;/a&gt;
+                                                        &lt;a href="#skills"&gt; Skills&lt;/a&gt;
+                                                        &lt;a href="#projects"&gt; Projects&lt;/a&gt;
+                                                        &lt;a href="/contact.html" onclick="french"&gt; Change To French&lt;/a&gt;
+                                                    
+                                                    &lt;/div&gt;
+                                        
+                                        
+                                                    &lt;span class="mobileNavMenu"&gt;Menu&lt;/span&gt;
+                                                    
+                                            
+                                                &lt;/nav&gt;
+                                            &lt;/header&gt;
+                                            
+                                            &lt;main&gt;
+                                                &lt;section class="hero"&gt; 
+                                                    &lt;div class="hero-container"&gt;
+                                                        &lt;h1&gt; Hi, I'm &lt;span&gt;Thomas Haene&lt;/span&gt;&lt;/h1&gt;
+                                                        &lt;p&gt; Full time Electrical Engineering student with a passion for &lt;br&gt; &lt;span&gt;Software Development&lt;/span&gt;&lt;/p&gt;
+                                                        &lt;div class="button-container"&gt;
+                                                            &lt;input type="submit" value= "See resume" class='resumebutton' onclick="openResume()"/&gt;
+                                                            &lt;input type="submit" value= "Contact me" class='resumebutton'/&gt;
+                                                        
+                                                        &lt;/div&gt;
+                                                    
+                                                    
+                                                    &lt;/div&gt;
+                                                &lt;/section&gt;  
+                                                
+                                                &lt;section class="aboutme"&gt;
+                                                    &lt;h1&gt; About Me&lt;/h1&gt;
+                                        
+                                                    &lt;span id="about"&gt;&lt;/span&gt;
+                                        
+                                                    &lt;p class="aboutp"&gt;
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque odit magnam mollitia facere ex nisi velit enim unde aspernatur ullam odio, incidunt deserunt reprehenderit, nulla numquam. Praesentium, magni molestias.
+                                                    &lt;/p&gt;
+                                        
+                                                
+                                        
+                                        
+                                                
+                                                &lt;/section&gt;
+                                        
+                                        
+                                        
+                                        
+                                            
+                                            
+                                                &lt;section class="skills"&gt;
+                                                    &lt;h1&gt;My Skills&lt;/h1&gt;
+                                                    &lt;span id="skills"&gt;&lt;/span&gt;
+                                        
+                                                    &lt;div class="skillContainer"&gt;
+                                                        &lt;div class="skill1"&gt; 
+                                                            &lt;img src="htmlicon.png" alt=""&gt;
+                                                            &lt;h3&gt;HTML 5&lt;/h3&gt;
+                                                            &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="skill2"&gt;
+                                                            &lt;img src="cssicon.png" alt=""&gt;
+                                                            &lt;h3&gt;CSS&lt;/h3&gt;
+                                                            &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="skill3"&gt; 
+                                                            &lt;img src="JavaScripticon.png" alt=""&gt;
+                                                            &lt;h3&gt;JavaScript&lt;/h3&gt;
+                                                            &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="skill4"&gt; 
+                                                            &lt;img src="javaicon.png" alt="javaicon"&gt;
+                                                            &lt;h3&gt;Java&lt;/h3&gt;
+                                                            &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="skill5"&gt; 
+                                                            &lt;img src="pythonicon.png" alt=""&gt;
+                                                            &lt;h3&gt;Python&lt;/h3&gt;
+                                                            &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="skill6"&gt;
+                                                            &lt;img src="cicon.png" alt=""&gt;
+                                                            &lt;h3&gt;C&lt;/h3&gt;
+                                                            &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam porro nisi est nihil quam maiores impedit iste nostrum debitis possimus eius&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                        
+                                                    &lt;div class="buttonContainer"&gt;
+                                                        &lt;button data-language class="languagesButton" onclick="languagesMenu()" &gt; Language &lt;/button&gt;
+                                                        &lt;button data-software class="softwaresButton" onclick="softwareMenu()"&gt; Software&lt;/button&gt;
+                                                        &lt;button data-hardware class="hardwaresButton" onclick="hardwareMenu()"&gt; Hardware&lt;/button&gt;
+                                                    &lt;/div&gt;
+                                        
+                                                    
+                                        
+                                        
+                                                &lt;/section&gt;
+                                        
+                                            
+                                                &lt;section class="projects"&gt;
+                                                    &lt;h1&gt;My Projects&lt;/h1&gt;
+                                                    &lt;span id="projects"&gt;&lt;/span&gt;
+                                                
+                                                    
+                                        
+                                        
+                                                    &lt;div class="projectsContainer"&gt;
+                                                    
+                                                    
+                                        
+                                                        &lt;div class="projectCard"&gt;
+                                                            &lt;div class="cardImage1"&gt;&lt;/div&gt;
+                                                            &lt;h2&gt;Portfolio site&lt;/h2&gt;
+                                                            &lt;p&gt;This is the site you are currently visiting. Made using HTML, CSS and JavaScript.&lt;/p&gt;
+                                                            &lt;button class="1stProject" onclick="window.location.href ='portfolio_site_details.html'"&gt;Read more&lt;/button&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="projectCard"&gt;
+                                                            &lt;div class="cardImage2"&gt;&lt;/div&gt;
+                                                            &lt;h2&gt;"Teach yourself" app &lt;/h2&gt;
+                                                            &lt;p&gt;Built for the Android play store. The app allows users to create categories and save audio and video recordings in one place.&lt;/p&gt;
+                                                            &lt;button class="1stProject" onclick="window.location.href = 'Teach_yourself.html'"&gt;Read more&lt;/button&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="third"&gt;
+                                                            &lt;div class="arrows"&gt;
+                                                                &lt;img src="leftarrow.png" alt="" class="leftArrow" onclick="leftArrow"&gt;
+                                                                &lt;img src="rightarrow.png" alt="" class="rightArrow" onclick="rightArrow"&gt;
+                                                                
+                                                            &lt;/div&gt;
+                                                            &lt;div class="projectCard"&gt;
+                                                                &lt;div class="cardImage3"&gt;&lt;/div&gt;
+                                                                &lt;h2&gt;Python NBA API project&lt;/h2&gt;
+                                                                &lt;p&gt;This project taught me the Django back-end framework, which I used to handle network requests and perform back-end business logic&lt;/p&gt;
+                                                                &lt;button class="1stProject" onclick=""&gt;Read more&lt;/button&gt;
+                                                            &lt;/div&gt;     
+                                        
+                                                        &lt;/div&gt;
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    &lt;/div&gt;
+                                                
+                                                    
+                                        
+                                                
+                                                &lt;/section&gt;
+                                            
+                                        
+                                            &lt;/main&gt;
+                                            
+                                        
+                                            
+                                            &lt;footer&gt;
+                                                &lt;div class="footerContainer"&gt;
+                                                    &lt;div class="copyright"&gt;
+                                                        Copyright © Thomas Haene 2022
+                                                    &lt;/div&gt;
+                                                    &lt;div class="icons"&gt;
+                                                        &lt;div class="linkedin"&gt;
+                                                            &lt;a href="https://www.linkedin.com/in/thomas-haene-a68b44220/"&gt;
+                                                                &lt;img src="linkedinwhite.png" alt=""&gt;
+                                                            &lt;/a&gt;
+                                                        
+                                                        &lt;/div&gt;
+                                                        &lt;div class="github"&gt;
+                                                            &lt;a href="https://github.com/TomHaene"&gt;&lt;img src="githubwhite.png" alt=""&gt;&lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="email"&gt;
+                                                            &lt;a href=""&gt;&lt;img src="emailwhite.png" alt=""&gt;&lt;/a&gt;
+                                                        &lt;/div&gt;
+                                        
+                                                    &lt;/div&gt;
+                                        
+                                        
+                                        
+                                        
+                                                    
+                                                &lt;/div&gt;
+                                        
+                                            &lt;/footer&gt;
+                                        
+                                        
+                                            
+                                        &lt;/body&gt;
+                                        
+                                        
+                                        &lt;/html&gt;
+                                    &lt;/code&gt;
+                                &lt;/pre&gt;
+                            &lt;/div&gt;
+
+
+                        &lt;/div&gt;
+                        
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+        </div>
+
+
+        <div class="cssheader">The CSS code:</div>
+
+        <div class="css-container">
+            <pre>
+                <code class="language-css">
+                    * {
+                        box-sizing: border-box;
+                        margin:0px;
+                        padding: 0px;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'Sans-serif';
+                        /* border: 2px solid lime  */
+                    }
+                    
+                    
+                    html{
+                        font-size: 62.5%; 
+                        /*this is 10px*/
+                    
+                    }
+                    
+                    
+                    
+                    /*-----------------Nav section-----------------------*/ 
+                    nav{
+                        height:9vh;
+                        background-color: #181a1b;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-left: 2%;
+                        padding-right: 2%;
+                        position: fixed;
+                        top: 0%;
+                        width: 100%;
+                        z-index: 9999;
+                        
+                    }  
+                    
+                    nav a, .logo{
+                        text-decoration: none;
+                        padding: 0 1.5rem;
+                        color:#fff;
+                    }
+                    
+                    nav a{
+                        letter-spacing: 2px;
+                        font-size: 1.5rem;
+                    }
+                    
+                    nav .logo{
+                        color: #e44e58;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        letter-spacing: 4px;
+                    }
+                    
+                    .mobileNavMenu{
+                        display: none;
+                    }
+                    
+                    
+                    .hamburgerMenu{
+                        cursor: pointer;
+                        display: none;
+                    }
+                    
+                    
+                    /*-----------------Nav section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Hero section-----------------------*/ 
+                    .hero{
+                        background-color: #181a1b;
+                        color: #fff;
+                    
+                       
+                    }
+                    
+                    .hero-container{
+                        height:100vh;
+                        padding-top: 9%;
+                        line-height: 1.5;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    .hero-container p{
+                        margin-top:23px;
+                    
+                        line-height: 1.6;
+                        font-size:1.8rem;
+                        text-align: center;
+                    }
+                    
+                    .hero h1{
+                        font-size: 5rem;
+                        margin-top: 1vh;
+                    }
+                    
+                    .hero h1 span{
+                        color: #e44e58;
+                    }
+                    
+                    
+                    .button-container{
+                        margin-top: 40px;
+                    }
+                    
+                    .button-container input{
+                        margin: 0 10px 0 10px;;
+                    }
+                    
+                    /*---------------- Hero section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------About me section-----------------------*/ 
+                    .aboutme{
+                        background-color: #002333;
+                        color: #fff;
+                        height:55vh;
+                        position: relative;
+                    }
+                    
+                    .aboutme h1{
+                        display: inline-block;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 38px;
+                        font-size: 2.2rem;
+                    }
+                    
+                    .aboutp{
+                        position: absolute;
+                        height:15vh;
+                        width: 60%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 33vh;
+                        font-size: 1.4rem;
+                        text-align: center;
+                    
+                    }
+                    
+                    #about{
+                        position: relative;
+                        top:-55%;
+                    }
+                    
+                    
+                    
+                    /*-----------------About me section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Skills section-----------------------*/ 
+                    .skills{
+                        background-color: #181a1b;
+                        color: #fff;
+                        height:100vh;
+                        position: relative;
+                    }
+                    
+                    #skills{
+                        position: relative;
+                        top:-6%;
+                    }
+                    
+                    .skills h1{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 40px;
+                       font-size: 2.2rem;
+                       display: inline-block;
+                    }
+                    .skillContainer{
+                        display: grid;
+                        grid-template-columns: repeat(3,1fr);
+                        grid-template-rows: 160px 160px 160px;
+                        grid-row-gap: 10%;
+                        grid-column-gap: 8%;
+                        padding: 3%;
+                        padding-top:9%;
+                    
+                    }
+                    
+                    
+                    .skillContainer div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    
+                    }
+                    
+                    .skillContainer img{
+                        width: 53px;
+                        margin-bottom: 2%;
+                        margin-top: 1%;
+                    }
+                    .skillContainer h3{
+                        margin-bottom: 3%;
+                        font-size: 2rem;;
+                    }
+                    .skillContainer p{
+                        margin-bottom: 2%;
+                        font-size: 1.4rem;
+                        text-align: center;
+                    }
+                    
+                    
+                    .buttonContainer{
+                        display: flex;
+                        margin-top: 40px;
+                        flex-direction: row;
+                        justify-content: center;
+                        position: relative;
+                        bottom: 17%;
+                    }
+                    
+                    .buttonContainer button{
+                        margin: 0 1%;
+                        background-color: lightskyblue;
+                        width:150px;
+                        color: black;
+                        font-size: 17px;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                    
+                    .buttonContainer button:hover {
+                        background-color: #45a049;
+                        width:150px;
+                        color: black;
+                        font-size: 17px;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                      }
+                    
+                      .buttonContainer button.languagesButton{
+                        background-color: #45a049;
+                      }
+                    
+                      .buttonContainer button.softwaresButton{
+                        width: fit-content;
+                    
+                      }
+                    
+                    
+                    /*-----------------Skills section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Projects section-----------------------*/ 
+                    
+                    .projects{
+                        background-color: #002333;
+                        color: #fff;
+                        height:95vh;
+                        padding-top: 30px;
+                    }
+                    
+                    .projects h1{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 10px;
+                       font-size: 2.2rem;
+                       display: inline-block;
+                    }
+                    
+                    #projects{
+                        position: relative;
+                        top:-11%;
+                    }
+                    
+                    
+                    .projectsContainer{
+                        display: flex;
+                        justify-content: center;
+                    
+                        flex-wrap: wrap;
+                        margin-top: 60px;
+                    
+                    
+                    }
+                    
+                    
+                    .projectCard{
+                        width:270px;
+                        height: 370px;
+                        margin: 10px;
+                        margin-top: 70px;
+                        border-radius: 15px;
+                        position: relative;
+                        background-color:#181a1b;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .projectCard:hover{
+                        cursor: pointer;
+                        transform: scale(1.03);
+                        transition: all 1s ease;
+                    
+                    }
+                    
+                    .projectCard div{
+                        height: 170px;
+                        margin-bottom: 15px;
+                        background-size: cover;
+                        border-radius: 15px 15px 0 0 ;
+                    
+                    }
+                    
+                    .projectCard h2{
+                        padding: 10px;
+                    
+                    }
+                    
+                    .projectCard p{
+                        padding: 10px;
+                        font-size: 1.3rem;
+                        line-height: 1.5;
+                    }
+                    
+                    
+                    .cardImage1{
+                        background-image: url(websitepic.png);
+                        
+                    }
+                    
+                    .cardImage2{
+                        background-image: url(stock.jpg);
+                    
+                    }
+                    
+                    .cardImage3{
+                        background-image: url(riddle.webp);
+                    
+                    }
+                    
+                    .projectCard button{
+                        background-color:lightskyblue;
+                        padding: 12px 15px;
+                        text-align: center;
+                        display: block;
+                        margin: 12px 50px;
+                        
+                    }
+                    
+                    .projectCard button:hover{
+                        cursor: pointer;
+                        background-color: #45a049;
+                    }
+                    
+                    
+                    .third{
+                        position: relative;
+                    
+                    }
+                    
+                    .arrows{
+                        height: 50px;
+                        width: 100px;
+                       position: absolute;
+                       right: 5%;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                    
+                    }
+                    .arrows img{
+                        height:40px;
+                        padding: 5px;
+                        margin: 0 3px;
+                        width:auto;
+                        background-color: #e44e58;
+                    }
+                    
+                    .leftArrow:hover{
+                        cursor: pointer;
+                    }
+                    
+                    .rightArrow:hover{
+                        cursor: pointer;
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Projects section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Footer section-----------------------*/ 
+                    
+                    footer{
+                        background-color: #181a1b;
+                        padding: 12px;
+                    }
+                    
+                    
+                    .footerContainer{
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                    
+                    
+                    
+                    }
+                    
+                    .copyright{
+                        line-height: 1.5;
+                        color: #fff;
+                        margin-right: 7px;
+                    }
+                    
+                    
+                    footer img{
+                        height:40px;
+                        background-color:#fff
+                    }
+                    
+                    
+                    .email{
+                        transition: transform 0.2s ease-out;
+                    }
+                    
+                    .email:hover{
+                        transform: scale(1.1);
+                        transition: all 0.5s ease;
+                    }
+                    .github{
+                        transition: transform 0.2s ease-out;
+                    }
+                    
+                    .github:hover{
+                        transform: scale(1.1);
+                        transition: all 0.5s ease;
+                    }
+                    .linkedin{
+                        transition: transform 0.2s ease-out;
+                    }
+                    
+                    .linkedin:hover{
+                        transform: scale(1.1);
+                        transition: all 0.5s ease;
+                    }
+                    
+                    
+                    
+                    
+                    .icons{
+                        display:flex;
+                        margin-left: 12px;
+                        margin-right: 8px;
+                    }
+                    
+                    .icons div{
+                        margin-right:15px;
+                        margin-left:15px;
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Footer section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*-----------------Buttons section-----------------------*/ 
+                    input[type=text], select, textarea {
+                        width: 100%; /* Full width */
+                        padding: 12px; /* Some padding */ 
+                        border: 1px solid #ccc; /* Gray border */
+                        border-radius: 4px; /* Rounded borders */
+                        box-sizing: border-box; /* Make sure that padding and width stays in place */
+                    
+                        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+                    
+                      }
+                      /* Style the submit button with a specific background color etc */
+                      input[type=submit] {
+                        background-color: lightskyblue;
+                        width:150px;
+                        color: black;
+                        font-size: 17px;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                      }
+                      
+                      /* When moving the mouse over the submit button, add a darker green color */
+                      input[type=submit]:hover {
+                        background-color: #45a049;
+                      }
+                    /*-----------------Buttons section-----------------------*/ 
+                    
+                    
+                    
+                    
+                    
+                    
+                    /*---------------Mobile Version-------------------------*/
+                    
+                    
+                    @media screen and (max-width: 767px) {
+                    
+                    
+                         /*--------Mobile NavBar ---------------*/
+                    
+                         .nav-items{
+                            display: none;
+                         }
+                    
+                         nav .logo{
+                            font-size: 1.7rem;
+                        }
+                    
+                        .mobileNavMenu{
+                            display: inline-block;
+                            color: #fff;
+                            font-size: 2rem;
+                            margin-right: 5%;
+                        }
+                    
+                       
+                    
+                    
+                          /*--------Mobile NavBar ---------------*/
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                          /*--------Mobile Hero section ---------------*/
+                    
+                          
+                          .hero h1{
+                            margin-top: 10vh;
+                            text-align: center;
+                            padding-left: 6%;
+                            padding-right: 6%;
+                            font-size: 4rem;
+                        }
+                    
+                        .hero-container p{
+                            margin-top:23px;
+                            padding-left: 4%;
+                            padding-right: 4%;;
+                            line-height: 1.6;
+                            font-size:1.4rem;
+                            
+                        }
+                    
+                          /*--------Mobile Hero section ---------------*/
+                          
+                          
+                    
+                    
+                    
+                        .aboutp{
+                            width:75%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        /*--------Mobile Skills Section -------*/
+                    
+                        .skills{
+                            height: 1300px;
+                        }
+                    
+                    
+                        .skillContainer {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: repeat(6, auto);
+                            padding:0% 3%;
+                            grid-row-gap: 1.7%;
+                            padding-top: 24vh;
+                        
+                          }
+                    
+                          .buttonContainer{
+                            position: absolute;
+                            width: 90%;
+                            bottom: 89%;
+                            left:50%;
+                            transform:translate(-50%);
+                    
+                        }
+                    
+                        .buttonContainer button{
+                            padding: 1em;
+                            width: auto;
+                            font-size: 1.4rem;
+                        }
+                    
+                        .buttonContainer button:hover{
+                            width: auto;
+                            padding: 1em;
+                            font-size: 1.4rem;
+                    
+                    
+                    
+                        }
+                        
+                    
+                        /*--------Mobile Skills Section -------*/
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        /*--------Mobile Projects Section -------*/
+                    
+                    
+                        .projects{
+                            height: 183vh
+                        }
+                    
+                        .arrows{
+                            display: none;
+                        }
+                    
+                        .projectCard{
+                            margin-top:20px;
+                        }
+                    
+
+                        /*--------Mobile Projects Section -------*/
+                       
+                
+                    }
+                </code>
+            </pre>
+        </div>
+
+        <div class="jsheader">The JavaScript code:</div>
+
+        <div class="html-container">
+            <pre>
+                <code class="language-js">
+                   
+                    function openResume(){
+                        window.open('MasterResume.pdf', '_blank');
+                      
+                        return;
+                      }
+                      
+                      function leftArrow(){
+                    
+                      }
+                      
+                      
+                      function rightArrow(){
+                      
+                      }
+                      
+                      
+                      function french(){
+                        
+                      }
+                      
+                      function languagesMenu(){
+                      
+                      
+                        const languageButton = document.querySelector('[data-language]')
+                        const softwareButton = document.querySelector('[data-software]')
+                        const hardwareButton = document.querySelector('[data-hardware]')
+                        
+                        languageButton.style.backgroundColor='#45a049';
+                        hardwareButton.style.backgroundColor='lightskyblue';
+                        softwareButton.style.backgroundColor='lightskyblue';
+                      
+                
+                        document.querySelector('.skill1 h3').textContent = "HTML 5";
+                        document.querySelector('.skill1 img').src = "htmlicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill2 h3').textContent = "CSS";
+                        document.querySelector('.skill2 img').src = "cssicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill3 h3').textContent = "JavaScript";
+                        document.querySelector('.skill3 img').src = "JavaScripticon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill4 h3').textContent = "Java";
+                        document.querySelector('.skill4 img').src = "javaicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill5 h3').textContent = "Python";
+                        document.querySelector('.skill5 img').src = "pythonicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill6 h3').textContent = "C";
+                        document.querySelector('.skill6 img').src = "cicon.png";
+                      
+                        return;
+                      
+                      }
+                      
+                      
+                      function softwareMenu(){
+                      
+                      
+                        const languageButton = document.querySelector('[data-language]')
+                        const softwareButton = document.querySelector('[data-software]')
+                        const hardwareButton = document.querySelector('[data-hardware]')
+                        
+                        languageButton.style.backgroundColor='lightskyblue';
+                        hardwareButton.style.backgroundColor='lightskyblue';
+                        softwareButton.style.backgroundColor='#45a049';
+                      
+                        document.querySelector('.skill1 h3').textContent = "VSCode";
+                        document.querySelector('.skill1 img').src = "vscodeicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill2 h3').textContent = "Android Studio";
+                        document.querySelector('.skill2 img').src = "androidstudioicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill3 h3').textContent = "Altium Designer";
+                        document.querySelector('.skill3 img').src = "altiumicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill4 h3').textContent = "IntelliJ";
+                        document.querySelector('.skill4 img').src = "jicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill5 h3').textContent = "Intel Quartus Prime";
+                        document.querySelector('.skill5 img').src = "quartusicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill6 h3').textContent = "Django";
+                        document.querySelector('.skill6 img').src = "springicon.svg";
+                      
+                        return;
+                      
+                      }
+                      
+                      
+                      
+                      function hardwareMenu(){
+                      
+                      
+                        const languageButton = document.querySelector('[data-language]')
+                        const softwareButton = document.querySelector('[data-software]')
+                        const hardwareButton = document.querySelector('[data-hardware]')
+                        
+                        languageButton.style.backgroundColor='lightskyblue';
+                        hardwareButton.style.backgroundColor='#45a049';
+                        softwareButton.style.backgroundColor='lightskyblue';
+                      
+                        document.querySelector('.skill1 h3').textContent = "Arduino";
+                        document.querySelector('.skill1 img').src = "arduinoicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill2 h3').textContent = "Soldering";
+                        document.querySelector('.skill2 img').src = "androidstudioicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill3 h3').textContent = "Altium Designer";
+                        document.querySelector('.skill3 img').src = "altiumicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill4 h3').textContent = "IntelliJ";
+                        document.querySelector('.skill4 img').src = "jicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill5 h3').textContent = "Intel Quartus Prime";
+                        document.querySelector('.skill5 img').src = "quartusicon.png";
+                        //------------------------------------------------------------//
+                        document.querySelector('.skill6 h3').textContent = "Spring";
+                        document.querySelector('.skill6 img').src = "springicon.svg";
+                      
+                        return;
+                      
+                      }
+                </code>
+            </pre>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+<script src="prism.js"></script>
+
+</html>

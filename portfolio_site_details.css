@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid lime */
+}
+
+
+body{
+    font-family: 'Trebuchet MS';
+    font-size: 62.5%; 
+}
+
+
+
+.center_section{
+    margin-inline: auto;
+    height:1600px;
+    background-color: #002333;
+    min-width: 500px;
+    width: 70vw;
+    color: white;
+}
+/* I think this is a pretty common design pattern, and I really like it. It's really simple: */
+/* Set a relative width, BUT set a min width in absolute units */
+
+
+.header{
+    color: white;
+    margin: 20px;
+    font-size: 1.4rem;
+    display: inline-block;
+    position: relative;
+    left:50%;
+    transform: translate(-55%);
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+
+.sub_header{
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.htmlheader{
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 20px;
+    color: #e44e58;
+
+}
+
+
+.html-container{
+    margin-inline: auto;
+    width: 80%;
+    height:400px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+
+.cssheader{
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 20px;
+    margin-top: 30px;
+    color: #e44e58;
+}
+
+.css-container{
+    margin-inline: auto;
+    width: 80%;
+    height:400px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+
+
+.jsheader{
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 20px;
+    margin-top: 30px;
+    color: #e44e58;
+
+}
+
